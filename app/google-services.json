@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821052630968",
+    "project_id": "ride-hop",
+    "storage_bucket": "ride-hop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821052630968:android:d087d4c633a0c2a248d14d",
+        "android_client_info": {
+          "package_name": "com.ridehop_intership_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821052630968-bs4p9dcb69phaseg0qb5btjjn16od73b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz1hLAcEGML3nz9rqvck_Om3Nvx6CwkD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821052630968-bs4p9dcb69phaseg0qb5btjjn16od73b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
