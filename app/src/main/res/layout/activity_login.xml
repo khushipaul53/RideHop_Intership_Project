@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Signup"
+            android:text="Sign In"
             android:textColor="@color/SecondaryColor"
             android:textSize="29dp"
             android:textStyle="bold"
