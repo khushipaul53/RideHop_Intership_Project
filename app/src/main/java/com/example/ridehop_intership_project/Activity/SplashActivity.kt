@@ -1,11 +1,9 @@
-package com.example.ridehop_intership_project
+package com.example.ridehop_intership_project.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.ViewTreeObserver
-import androidx.databinding.DataBindingUtil
+import com.example.ridehop_intership_project.R
 import java.util.*
 
 class SplashActivity : AppCompatActivity() {
