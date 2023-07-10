@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RideHop_Intership_Project">
         <activity
+            android:name=".Activity.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.RideHop_Intership_Project.NoActionBar" />
+        <activity
             android:name=".Activity.DashboardActivity"
             android:exported="false" />
         <activity

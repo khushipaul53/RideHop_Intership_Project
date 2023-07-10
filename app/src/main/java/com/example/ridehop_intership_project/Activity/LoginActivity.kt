@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
 
 
         binding!!.btLogin!!.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(applicationContext, HomeActivity::class.java))
+            startActivity(Intent(applicationContext, DashboardActivity::class.java))
 
         })
 
