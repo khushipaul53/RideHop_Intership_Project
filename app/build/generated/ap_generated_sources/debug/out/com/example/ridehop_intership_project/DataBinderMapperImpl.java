@@ -6,9 +6,15 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.ridehop_intership_project.databinding.ActivityCreateOwnRideBindingImpl;
+import com.example.ridehop_intership_project.databinding.ActivityDashboardBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivityLoginBindingImpl;
+import com.example.ridehop_intership_project.databinding.ActivityRiderDetailsBindingImpl;
+import com.example.ridehop_intership_project.databinding.ActivitySearchRidesBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivitySignupBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivitySplashBindingImpl;
+import com.example.ridehop_intership_project.databinding.FragmentDashboardBindingImpl;
+import com.example.ridehop_intership_project.databinding.NavigationLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -20,18 +26,36 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYLOGIN = 1;
+  private static final int LAYOUT_ACTIVITYCREATEOWNRIDE = 1;
 
-  private static final int LAYOUT_ACTIVITYSIGNUP = 2;
+  private static final int LAYOUT_ACTIVITYDASHBOARD = 2;
 
-  private static final int LAYOUT_ACTIVITYSPLASH = 3;
+  private static final int LAYOUT_ACTIVITYLOGIN = 3;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
+  private static final int LAYOUT_ACTIVITYRIDERDETAILS = 4;
+
+  private static final int LAYOUT_ACTIVITYSEARCHRIDES = 5;
+
+  private static final int LAYOUT_ACTIVITYSIGNUP = 6;
+
+  private static final int LAYOUT_ACTIVITYSPLASH = 7;
+
+  private static final int LAYOUT_FRAGMENTDASHBOARD = 8;
+
+  private static final int LAYOUT_NAVIGATIONLAYOUT = 9;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(9);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_create_own_ride, LAYOUT_ACTIVITYCREATEOWNRIDE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_dashboard, LAYOUT_ACTIVITYDASHBOARD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_rider_details, LAYOUT_ACTIVITYRIDERDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_search_rides, LAYOUT_ACTIVITYSEARCHRIDES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_signup, LAYOUT_ACTIVITYSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.fragment_dashboard, LAYOUT_FRAGMENTDASHBOARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.navigation_layout, LAYOUT_NAVIGATIONLAYOUT);
   }
 
   @Override
@@ -43,11 +67,35 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYCREATEOWNRIDE: {
+          if ("layout/activity_create_own_ride_0".equals(tag)) {
+            return new ActivityCreateOwnRideBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_create_own_ride is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYDASHBOARD: {
+          if ("layout/activity_dashboard_0".equals(tag)) {
+            return new ActivityDashboardBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_dashboard is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYLOGIN: {
           if ("layout/activity_login_0".equals(tag)) {
             return new ActivityLoginBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYRIDERDETAILS: {
+          if ("layout/activity_rider_details_0".equals(tag)) {
+            return new ActivityRiderDetailsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_rider_details is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSEARCHRIDES: {
+          if ("layout/activity_search_rides_0".equals(tag)) {
+            return new ActivitySearchRidesBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_search_rides is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYSIGNUP: {
           if ("layout/activity_signup_0".equals(tag)) {
@@ -60,6 +108,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivitySplashBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTDASHBOARD: {
+          if ("layout/fragment_dashboard_0".equals(tag)) {
+            return new FragmentDashboardBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_dashboard is invalid. Received: " + tag);
+        }
+        case  LAYOUT_NAVIGATIONLAYOUT: {
+          if ("layout/navigation_layout_0".equals(tag)) {
+            return new NavigationLayoutBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for navigation_layout is invalid. Received: " + tag);
         }
       }
     }
@@ -114,12 +174,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(9);
 
     static {
+      sKeys.put("layout/activity_create_own_ride_0", com.example.ridehop_intership_project.R.layout.activity_create_own_ride);
+      sKeys.put("layout/activity_dashboard_0", com.example.ridehop_intership_project.R.layout.activity_dashboard);
       sKeys.put("layout/activity_login_0", com.example.ridehop_intership_project.R.layout.activity_login);
+      sKeys.put("layout/activity_rider_details_0", com.example.ridehop_intership_project.R.layout.activity_rider_details);
+      sKeys.put("layout/activity_search_rides_0", com.example.ridehop_intership_project.R.layout.activity_search_rides);
       sKeys.put("layout/activity_signup_0", com.example.ridehop_intership_project.R.layout.activity_signup);
       sKeys.put("layout/activity_splash_0", com.example.ridehop_intership_project.R.layout.activity_splash);
+      sKeys.put("layout/fragment_dashboard_0", com.example.ridehop_intership_project.R.layout.fragment_dashboard);
+      sKeys.put("layout/navigation_layout_0", com.example.ridehop_intership_project.R.layout.navigation_layout);
     }
   }
 }

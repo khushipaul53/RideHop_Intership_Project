@@ -1,38 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+       android:id="@+id/rl_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
     android:background="@color/primaryColor"
-    tools:context=".Fragment.DashboardFragment">
+  >
 
-<RelativeLayout
-    android:id="@+id/rl_layout"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.RideHop_Intership_Project">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
+    <ImageButton
+        android:id="@+id/sideMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu">
 
+    </ImageButton>
     <TextView
         android:id="@+id/tv_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:text="Find Ride"
         android:textColor="@color/white"
         android:textSize="29dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_margin="20dp">
+        android:textStyle="bold">
 
     </TextView>
+</androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/tv_heading"
+        android:layout_below="@+id/viewPagerMain"
         android:orientation="vertical"
-        android:layout_marginTop="48dp"
-
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
         android:background="@drawable/curved_retangle">
 
         <LinearLayout
@@ -60,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_weight=".7"
-
+                android:textSize="30dp"
                 android:background="@drawable/edit_text"
                >
 
@@ -91,6 +123,8 @@
                 android:layout_weight=".7"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:textSize="30dp"
+
                 android:background="@drawable/edit_text"
                 >
 
@@ -112,9 +146,11 @@
         </TextView>
 
         <LinearLayout
+            android:id="@+id/llCustom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
+            android:visibility="gone"
             android:orientation="horizontal">
 
             <TextView
@@ -135,6 +171,8 @@
                 android:layout_weight=".7"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:textSize="30dp"
+
                 android:background="@drawable/edit_text"
                 >
 
@@ -145,6 +183,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
+
             android:orientation="horizontal">
 
             <TextView
@@ -161,6 +200,7 @@
             </TextView>
 
             <Spinner
+                android:id="@+id/spSeats"
                 android:layout_width="0dp"
                 android:layout_weight=".7"
                 android:layout_height="wrap_content"
@@ -182,7 +222,21 @@
             android:layout_marginHorizontal="20dp">
 
         </androidx.appcompat.widget.AppCompatButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/SecondaryColor"
+            app:srcCompat="@drawable/plus" />
     </LinearLayout>
+
 </RelativeLayout>
 
-</FrameLayout>
+
+
+</layout>

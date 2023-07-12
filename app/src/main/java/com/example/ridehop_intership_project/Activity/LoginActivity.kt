@@ -27,6 +27,11 @@ class LoginActivity : AppCompatActivity() {
 
         })
 
+        binding!!.TvForgot.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(applicationContext, ForgotPassword::class.java))
+
+        })
+
 
     }
 }
