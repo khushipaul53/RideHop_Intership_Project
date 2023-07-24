@@ -12,5 +12,34 @@
         tools:layout="@layout/fragment_dashboard" />
 
 
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.ridehop_intership_project.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:name="com.example.ridehop_intership_project.Fragment.SettingsFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/fragment_myRides"
+        android:name="com.example.ridehop_intership_project.Fragment.MyRidesFragment"
+        android:label="My Rides"
+        tools:layout="@layout/fragment_my_rides" />
+
+    <fragment
+        android:id="@+id/fragment_promocode"
+        android:name="com.example.ridehop_intership_project.Fragment.PromocodeFragment"
+        android:label="Promocode"
+        tools:layout="@layout/fragment_promocode" />
+
+    <fragment
+        android:id="@+id/fragment_rewards"
+        android:name="com.example.ridehop_intership_project.Fragment.RewardsFragment"
+        android:label="Rewards"
+        tools:layout="@layout/fragment_rewards" />
 
 </navigation>

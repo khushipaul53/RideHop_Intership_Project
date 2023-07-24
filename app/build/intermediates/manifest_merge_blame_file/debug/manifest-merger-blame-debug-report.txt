@@ -37,7 +37,7 @@
 20-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 21
 22    <application
-22-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:9:5-76:19
+22-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:9:5-79:19
 23        android:allowBackup="true"
 23-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:10:9-35
 24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -56,221 +56,228 @@
 31-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:15:9-63
 32        <activity
 32-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:16:9-18:40
-33            android:name="com.example.ridehop_intership_project.GoogleMap.GoogleMapActivity"
-33-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:17:13-56
+33            android:name="com.example.ridehop_intership_project.Fragment.ProfileFragment"
+33-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:17:13-53
 34            android:exported="false" />
 34-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:18:13-37
 35        <activity
 35-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:19:9-21:40
-36            android:name="com.example.ridehop_intership_project.Activity.CreateOwnRideActivity"
-36-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:20:13-59
+36            android:name="com.example.ridehop_intership_project.GoogleMap.GoogleMapActivity"
+36-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:20:13-56
 37            android:exported="false" />
 37-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:21:13-37
 38        <activity
 38-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:22:9-24:40
-39            android:name="com.example.ridehop_intership_project.Activity.CreateOwnRide"
-39-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:23:13-51
+39            android:name="com.example.ridehop_intership_project.Activity.CreateOwnRideActivity"
+39-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:23:13-59
 40            android:exported="false" />
 40-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:24:13-37
 41        <activity
 41-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:25:9-27:40
-42            android:name="com.example.ridehop_intership_project.Activity.RiderDetailsActivity"
-42-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:26:13-58
+42            android:name="com.example.ridehop_intership_project.Activity.CreateOwnRide"
+42-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:26:13-51
 43            android:exported="false" />
 43-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:27:13-37
 44        <activity
 44-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:28:9-30:40
-45            android:name="com.example.ridehop_intership_project.Activity.SearchRidesActivity"
-45-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:29:13-57
+45            android:name="com.example.ridehop_intership_project.Activity.RiderDetailsActivity"
+45-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:29:13-58
 46            android:exported="false" />
 46-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:30:13-37
 47        <activity
 47-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:31:9-33:40
-48            android:name="com.example.ridehop_intership_project.Activity.ForgotPassword"
-48-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:32:13-52
+48            android:name="com.example.ridehop_intership_project.Activity.SearchRidesActivity"
+48-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:32:13-57
 49            android:exported="false" />
 49-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:33:13-37
 50        <activity
-50-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:34:9-38:82
-51            android:name="com.example.ridehop_intership_project.Activity.NavigationActivity"
-51-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:35:13-56
-52            android:exported="false"
+50-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:34:9-36:40
+51            android:name="com.example.ridehop_intership_project.Activity.ForgotPassword"
+51-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:35:13-52
+52            android:exported="false" />
 52-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:36:13-37
-53            android:label="@string/title_activity_navigation"
-53-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:37:13-62
-54            android:theme="@style/Theme.RideHop_Intership_Project.NoActionBar" />
-54-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:38:13-79
-55        <activity
-55-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:39:9-41:40
-56            android:name="com.example.ridehop_intership_project.Activity.DashboardActivity"
-56-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:40:13-55
-57            android:exported="false" />
-57-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:41:13-37
+53        <activity
+53-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:37:9-41:82
+54            android:name="com.example.ridehop_intership_project.Activity.NavigationActivity"
+54-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:38:13-56
+55            android:exported="false"
+55-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:39:13-37
+56            android:label="@string/title_activity_navigation"
+56-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:40:13-62
+57            android:theme="@style/Theme.RideHop_Intership_Project.NoActionBar" />
+57-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:41:13-79
 58        <activity
 58-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:42:9-44:40
-59            android:name="com.example.ridehop_intership_project.Activity.SignupActivity"
-59-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:43:13-52
+59            android:name="com.example.ridehop_intership_project.Activity.DashboardActivity"
+59-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:43:13-55
 60            android:exported="false" />
 60-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:44:13-37
 61        <activity
 61-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:45:9-47:40
-62            android:name="com.example.SignupActivity"
-62-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:46:13-54
+62            android:name="com.example.ridehop_intership_project.Activity.SignupActivity"
+62-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:46:13-52
 63            android:exported="false" />
 63-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:47:13-37
 64        <activity
 64-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:48:9-50:40
-65            android:name="com.example.ridehop_intership_project.Activity.HomeActivity"
-65-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:49:13-50
+65            android:name="com.example.SignupActivity"
+65-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:49:13-54
 66            android:exported="false" />
 66-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:50:13-37
 67        <activity
 67-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:51:9-53:40
-68            android:name="com.example.ridehop_intership_project.Activity.LoginActivity"
-68-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:52:13-51
+68            android:name="com.example.ridehop_intership_project.Activity.HomeActivity"
+68-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:52:13-50
 69            android:exported="false" />
 69-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:53:13-37
 70        <activity
-70-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:54:9-62:20
-71            android:name="com.example.ridehop_intership_project.Activity.SplashActivity"
-71-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:55:13-52
-72            android:exported="true" >
-72-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:56:13-36
-73            <intent-filter>
-73-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:57:13-61:29
-74                <action android:name="android.intent.action.MAIN" />
-74-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:17-69
-74-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:25-66
-75
-76                <category android:name="android.intent.category.LAUNCHER" />
-76-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:17-77
-76-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:27-74
-77            </intent-filter>
-78        </activity>
-79        <activity
-79-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:9-71:20
-80            android:name="com.example.ridehop_intership_project.Activity.MainActivity"
-80-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:64:13-50
-81            android:exported="true" >
-81-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:65:13-36
-82            <intent-filter>
-82-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:57:13-61:29
-83                <action android:name="android.intent.action.MAIN" />
-83-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:17-69
-83-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:25-66
-84
-85                <category android:name="android.intent.category.LAUNCHER" />
-85-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:17-77
-85-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:27-74
-86            </intent-filter>
-87        </activity>
-88
-89        <meta-data
-90            android:name="keyValue"
-90-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:74:13-38
-91            android:value="AIzaSyBz1hLAcEGML3nz9rqvck_Om3Nvx6CwkD0" />
-91-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:75:13-37
-92
-93        <activity
-93-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:15:9-21:20
-94            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-94-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:16:13-91
-95            android:exported="false"
-95-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:17:13-37
-96            android:label="@string/places_autocomplete_label"
-96-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:18:13-62
-97            android:theme="@style/PlacesAutocompleteOverlay"
-97-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:19:13-61
-98            android:windowSoftInputMode="adjustResize" >
-98-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:20:13-55
-99        </activity> <!-- Needs to be explicitly declared on P+ -->
-100        <uses-library
-100-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-101            android:name="org.apache.http.legacy"
-101-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-102            android:required="false" />
-102-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-103
-104        <activity
-104-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-105-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
-106            android:exported="false"
-106-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-107-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-108
-109        <meta-data
-109-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-110            android:name="com.google.android.gms.version"
-110-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-111            android:value="@integer/google_play_services_version" />
-111-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-112
-113        <uses-library
-113-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-114            android:name="androidx.window.extensions"
-114-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-115            android:required="false" />
-115-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+70-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:54:9-56:40
+71            android:name="com.example.ridehop_intership_project.Activity.LoginActivity"
+71-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:55:13-51
+72            android:exported="false" />
+72-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:56:13-37
+73        <activity
+73-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:57:9-65:20
+74            android:name="com.example.ridehop_intership_project.Activity.SplashActivity"
+74-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:13-52
+75            android:exported="true" >
+75-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:59:13-36
+76            <intent-filter>
+76-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:13-64:29
+77                <action android:name="android.intent.action.MAIN" />
+77-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:17-69
+77-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:25-66
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:17-77
+79-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:27-74
+80            </intent-filter>
+81        </activity>
+82        <activity
+82-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:66:9-74:20
+83            android:name="com.example.ridehop_intership_project.Activity.MainActivity"
+83-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:67:13-50
+84            android:exported="true" >
+84-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:68:13-36
+85            <intent-filter>
+85-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:13-64:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:17-69
+86-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:17-77
+88-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:27-74
+89            </intent-filter>
+90        </activity>
+91
+92        <meta-data
+92-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:76:9-78:71
+93            android:name="com.google.android.geo.API_KEY"
+93-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:77:13-58
+94            android:value="AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE" />
+94-->/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:78:13-68
+95
+96        <activity
+96-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:15:9-21:20
+97            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+97-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:16:13-91
+98            android:exported="false"
+98-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:17:13-37
+99            android:label="@string/places_autocomplete_label"
+99-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:18:13-62
+100            android:theme="@style/PlacesAutocompleteOverlay"
+100-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:19:13-61
+101            android:windowSoftInputMode="adjustResize" >
+101-->[com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:20:13-55
+102        </activity> <!-- Needs to be explicitly declared on P+ -->
+103        <uses-library
+103-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+104            android:name="org.apache.http.legacy"
+104-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+105            android:required="false" />
+105-->[com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+106
+107        <activity
+107-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+108-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+110-->[com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+111
+112        <meta-data
+112-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+113            android:name="com.google.android.gms.version"
+113-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->[com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+115
 116        <uses-library
-116-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-117            android:name="androidx.window.sidecar"
-117-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+116-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+117            android:name="androidx.window.extensions"
+117-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
 118            android:required="false" />
-118-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-119
-120        <provider
-120-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-121            android:name="androidx.startup.InitializationProvider"
-121-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-122            android:authorities="com.ridehop_intership_project.androidx-startup"
-122-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-123            android:exported="false" >
-123-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-124            <meta-data
-124-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-125-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-126                android:value="androidx.startup" />
-126-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+118-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+119        <uses-library
+119-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+120            android:name="androidx.window.sidecar"
+120-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+121            android:required="false" />
+121-->[androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+122
+123        <provider
+123-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+124            android:name="androidx.startup.InitializationProvider"
+124-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+125            android:authorities="com.ridehop_intership_project.androidx-startup"
+125-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+126            android:exported="false" >
+126-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 127            <meta-data
-127-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-128-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+127-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+128-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 129                android:value="androidx.startup" />
-129-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-130        </provider>
-131
-132        <service
-132-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:29:9-35:19
-133            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-133-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:30:13-103
-134            android:exported="false" >
-134-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:31:13-37
-135            <meta-data
-135-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:32:13-34:39
-136                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-136-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:33:17-94
-137                android:value="cct" />
-137-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:34:17-36
-138        </service>
-139        <service
-139-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:26:9-30:19
-140            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-140-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:27:13-117
-141            android:exported="false"
-141-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:28:13-37
-142            android:permission="android.permission.BIND_JOB_SERVICE" >
-142-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:29:13-69
-143        </service>
-144
-145        <receiver
-145-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:32:9-34:40
-146            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-146-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:33:13-132
-147            android:exported="false" />
-147-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:34:13-37
-148    </application>
-149
-150</manifest>
+129-->[androidx.emoji2:emoji2:1.2.0] /Users/admin/.gradle/caches/transforms-3/7694c501b0f19cc4fc1322cdba651a44/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+131                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+132                android:value="androidx.startup" />
+132-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/admin/.gradle/caches/transforms-3/4ddb24c4e296784fea9567e6347ef9b2/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+133        </provider>
+134
+135        <service
+135-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:29:9-35:19
+136            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+136-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:30:13-103
+137            android:exported="false" >
+137-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:31:13-37
+138            <meta-data
+138-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:32:13-34:39
+139                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+139-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:33:17-94
+140                android:value="cct" />
+140-->[com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/admin/.gradle/caches/transforms-3/438b09025a00a9f8ceca721fef47498a/transformed/transport-backend-cct-2.3.0/AndroidManifest.xml:34:17-36
+141        </service>
+142        <service
+142-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:26:9-30:19
+143            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+143-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:27:13-117
+144            android:exported="false"
+144-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:28:13-37
+145            android:permission="android.permission.BIND_JOB_SERVICE" >
+145-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:29:13-69
+146        </service>
+147
+148        <receiver
+148-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:32:9-34:40
+149            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+149-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:33:13-132
+150            android:exported="false" />
+150-->[com.google.android.datatransport:transport-runtime:2.2.3] /Users/admin/.gradle/caches/transforms-3/73f351724146829f7bf24d27854bb947/transformed/transport-runtime-2.2.3/AndroidManifest.xml:34:13-37
+151    </application>
+152
+153</manifest>

@@ -1,16 +1,9 @@
 -- Merging decision tree log ---
-meta-data#keyValue
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:73:9-75:39
-	android:value
-		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:75:13-37
-	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:74:13-38
 manifest
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
 MERGED from [androidx.databinding:databinding-adapters:7.1.2] /Users/admin/.gradle/caches/transforms-3/5d1b1a98ceb09efabe7f3b13179d0eeb/transformed/databinding-adapters-7.1.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-ktx:7.1.2] /Users/admin/.gradle/caches/transforms-3/5f2209a0e3acaec113ee10bb68537379/transformed/databinding-ktx-7.1.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:7.1.2] /Users/admin/.gradle/caches/transforms-3/81bb9493f61e7cd0d42e0480b80c2c76/transformed/databinding-runtime-7.1.2/AndroidManifest.xml:17:1-24:12
@@ -23,12 +16,14 @@ MERGED from [com.google.android.libraries.places:places:3.2.0] /Users/admin/.gra
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/admin/.gradle/caches/transforms-3/ddd28177b6543d5bb93f4984367c0cfb/transformed/appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/admin/.gradle/caches/transforms-3/dd70030620e23d46a102dda7d3b4dd09/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/admin/.gradle/caches/transforms-3/302fe1ee0fad35d2bb41d3b801e7d2cd/transformed/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-places:17.0.0] /Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/admin/.gradle/caches/transforms-3/f4bf4d7849870cb3b43f118c3b4dfaba/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/admin/.gradle/caches/transforms-3/f9da3a622a430cdf42da75d60ea4cf39/transformed/play-services-location-21.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/admin/.gradle/caches/transforms-3/154a5fd958169ebf5acf24242a5a0624/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/admin/.gradle/caches/transforms-3/1128277ee6cf765a460340e2320d301f/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /Users/admin/.gradle/caches/transforms-3/2707071a0fbe95fa2f84583c1d0e3e5e/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.2] /Users/admin/.gradle/caches/transforms-3/ddd1d18c992ffad48c70db0f45cafeef/transformed/navigation-fragment-2.5.2/AndroidManifest.xml:17:1-24:12
@@ -89,20 +84,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/admin/.gradle/caches/transforms-3/7065d7f59015c8ea79df9e21d87bb5db/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/admin/.gradle/caches/transforms-3/afb13ffca8cf2864f5bd087f44c754c9/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/admin/.gradle/caches/transforms-3/06716ec84cb06c61f3f9c19f2c347731/transformed/transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-78:12
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:2:11-69
@@ -131,7 +126,7 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] /Users/ad
 	android:name
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:9:5-76:19
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:9:5-79:19
 MERGED from [com.google.android.material:material:1.7.0] /Users/admin/.gradle/caches/transforms-3/3f94c35cd405313dc0b1727bdc1f528b/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] /Users/admin/.gradle/caches/transforms-3/3f94c35cd405313dc0b1727bdc1f528b/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/admin/.gradle/caches/transforms-3/6fcea0fddd862b470e39af4793f0e5ac/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -140,16 +135,20 @@ MERGED from [com.google.android.libraries.places:places:3.2.0] /Users/admin/.gra
 MERGED from [com.google.android.libraries.places:places:3.2.0] /Users/admin/.gradle/caches/transforms-3/e099dccc9700dc39e4c9c3a17b3710b8/transformed/places-3.2.0/AndroidManifest.xml:14:5-22:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/admin/.gradle/caches/transforms-3/302fe1ee0fad35d2bb41d3b801e7d2cd/transformed/glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/admin/.gradle/caches/transforms-3/302fe1ee0fad35d2bb41d3b801e7d2cd/transformed/glide-4.11.0/AndroidManifest.xml:10:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-places:17.0.0] /Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:17.0.0] /Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/admin/.gradle/caches/transforms-3/f9da3a622a430cdf42da75d60ea4cf39/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/admin/.gradle/caches/transforms-3/f9da3a622a430cdf42da75d60ea4cf39/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/admin/.gradle/caches/transforms-3/154a5fd958169ebf5acf24242a5a0624/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/admin/.gradle/caches/transforms-3/154a5fd958169ebf5acf24242a5a0624/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/admin/.gradle/caches/transforms-3/1128277ee6cf765a460340e2320d301f/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/admin/.gradle/caches/transforms-3/1128277ee6cf765a460340e2320d301f/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.window:window:1.0.0] /Users/admin/.gradle/caches/transforms-3/1cb980238adfc681c46bc9358b8bfe19/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
@@ -184,104 +183,116 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/admin/.gradle/caches
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:15:9-63
-activity#com.example.ridehop_intership_project.GoogleMap.GoogleMapActivity
+activity#com.example.ridehop_intership_project.Fragment.ProfileFragment
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:17:13-56
-activity#com.example.ridehop_intership_project.Activity.CreateOwnRideActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:17:13-53
+activity#com.example.ridehop_intership_project.GoogleMap.GoogleMapActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:20:13-59
-activity#com.example.ridehop_intership_project.Activity.CreateOwnRide
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:20:13-56
+activity#com.example.ridehop_intership_project.Activity.CreateOwnRideActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:23:13-51
-activity#com.example.ridehop_intership_project.Activity.RiderDetailsActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:23:13-59
+activity#com.example.ridehop_intership_project.Activity.CreateOwnRide
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:26:13-58
-activity#com.example.ridehop_intership_project.Activity.SearchRidesActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:26:13-51
+activity#com.example.ridehop_intership_project.Activity.RiderDetailsActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:29:13-57
-activity#com.example.ridehop_intership_project.Activity.ForgotPassword
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:29:13-58
+activity#com.example.ridehop_intership_project.Activity.SearchRidesActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:31:9-33:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:32:13-52
-activity#com.example.ridehop_intership_project.Activity.NavigationActivity
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:34:9-38:82
-	android:label
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:37:13-62
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:32:13-57
+activity#com.example.ridehop_intership_project.Activity.ForgotPassword
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:34:9-36:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:36:13-37
-	android:theme
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:38:13-79
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:35:13-56
-activity#com.example.ridehop_intership_project.Activity.DashboardActivity
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:39:9-41:40
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:35:13-52
+activity#com.example.ridehop_intership_project.Activity.NavigationActivity
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:37:9-41:82
+	android:label
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:40:13-62
 	android:exported
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:39:13-37
+	android:theme
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:41:13-79
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:40:13-55
-activity#com.example.ridehop_intership_project.Activity.SignupActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:38:13-56
+activity#com.example.ridehop_intership_project.Activity.DashboardActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:42:9-44:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:43:13-52
-activity#com.example.SignupActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:43:13-55
+activity#com.example.ridehop_intership_project.Activity.SignupActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:45:9-47:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:46:13-54
-activity#com.example.ridehop_intership_project.Activity.HomeActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:46:13-52
+activity#com.example.SignupActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:48:9-50:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:49:13-50
-activity#com.example.ridehop_intership_project.Activity.LoginActivity
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:49:13-54
+activity#com.example.ridehop_intership_project.Activity.HomeActivity
 ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:51:9-53:40
 	android:exported
 		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:52:13-51
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:52:13-50
+activity#com.example.ridehop_intership_project.Activity.LoginActivity
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:54:9-56:40
+	android:exported
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:56:13-37
+	android:name
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:55:13-51
 activity#com.example.ridehop_intership_project.Activity.SplashActivity
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:54:9-62:20
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:57:9-65:20
 	android:exported
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:56:13-36
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:59:13-36
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:55:13-52
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:57:13-61:29
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:13-64:29
 action#android.intent.action.MAIN
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:17-69
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:17-69
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:58:25-66
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:61:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:17-77
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:17-77
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:60:27-74
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:27-74
 activity#com.example.ridehop_intership_project.Activity.MainActivity
-ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:63:9-71:20
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:66:9-74:20
 	android:exported
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:65:13-36
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:68:13-36
 	android:name
-		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:64:13-50
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:67:13-50
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:76:9-78:71
+	android:value
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:78:13-68
+	android:name
+		ADDED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml:77:13-58
 uses-sdk
 INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/AndroidManifest.xml
@@ -310,18 +321,22 @@ MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/admin/.gradle/caches/tra
 MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/admin/.gradle/caches/transforms-3/dd70030620e23d46a102dda7d3b4dd09/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/admin/.gradle/caches/transforms-3/302fe1ee0fad35d2bb41d3b801e7d2cd/transformed/glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/admin/.gradle/caches/transforms-3/302fe1ee0fad35d2bb41d3b801e7d2cd/transformed/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-places:17.0.0] /Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:17.0.0] /Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/admin/.gradle/caches/transforms-3/d47dd5728b9597954b217b181e8b783e/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/admin/.gradle/caches/transforms-3/f4bf4d7849870cb3b43f118c3b4dfaba/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/admin/.gradle/caches/transforms-3/f4bf4d7849870cb3b43f118c3b4dfaba/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/admin/.gradle/caches/transforms-3/be2220424bdcc558d769091cc86324fe/transformed/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/admin/.gradle/caches/transforms-3/f9da3a622a430cdf42da75d60ea4cf39/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/admin/.gradle/caches/transforms-3/f9da3a622a430cdf42da75d60ea4cf39/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/admin/.gradle/caches/transforms-3/045a90939f5475077b55d3f76e333fd9/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/admin/.gradle/caches/transforms-3/154a5fd958169ebf5acf24242a5a0624/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/admin/.gradle/caches/transforms-3/154a5fd958169ebf5acf24242a5a0624/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/admin/.gradle/caches/transforms-3/1128277ee6cf765a460340e2320d301f/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/admin/.gradle/caches/transforms-3/1128277ee6cf765a460340e2320d301f/transformed/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.2] /Users/admin/.gradle/caches/transforms-3/2707071a0fbe95fa2f84583c1d0e3e5e/transformed/navigation-fragment-ktx-2.5.2/AndroidManifest.xml:20:5-22:41

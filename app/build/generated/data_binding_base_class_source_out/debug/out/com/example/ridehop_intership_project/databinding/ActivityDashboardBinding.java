@@ -19,17 +19,18 @@ public abstract class ActivityDashboardBinding extends ViewDataBinding {
   public final AppBarNavigationBinding appBarNavigation;
 
   @NonNull
-  public final DrawerLayout drawerLayout;
+  public final DrawerLayout drawerlayout;
 
   @NonNull
-  public final NavigationView navView;
+  public final NavigationView navigationView;
 
   protected ActivityDashboardBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AppBarNavigationBinding appBarNavigation, DrawerLayout drawerLayout, NavigationView navView) {
+      AppBarNavigationBinding appBarNavigation, DrawerLayout drawerlayout,
+      NavigationView navigationView) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appBarNavigation = appBarNavigation;
-    this.drawerLayout = drawerLayout;
-    this.navView = navView;
+    this.drawerlayout = drawerlayout;
+    this.navigationView = navigationView;
   }
 
   @NonNull

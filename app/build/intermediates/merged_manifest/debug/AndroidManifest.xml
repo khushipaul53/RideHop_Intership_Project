@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.RideHop_Intership_Project" >
         <activity
+            android:name="com.example.ridehop_intership_project.Fragment.ProfileFragment"
+            android:exported="false" />
+        <activity
             android:name="com.example.ridehop_intership_project.GoogleMap.GoogleMapActivity"
             android:exported="false" />
         <activity
@@ -87,8 +90,8 @@
         </activity>
 
         <meta-data
-            android:name="keyValue"
-            android:value="AIzaSyBz1hLAcEGML3nz9rqvck_Om3Nvx6CwkD0" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE" />
 
         <activity
             android:name="com.google.android.libraries.places.widget.AutocompleteActivity"

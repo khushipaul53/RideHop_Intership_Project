@@ -1909,6 +1909,12 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color place_autocomplete_prediction_primary_text
+color place_autocomplete_prediction_primary_text_highlight
+color place_autocomplete_prediction_secondary_text
+color place_autocomplete_search_hint
+color place_autocomplete_search_text
+color place_autocomplete_separator
 color places_autocomplete_error_button
 color places_autocomplete_error_message
 color places_autocomplete_fullscreen_background
@@ -2915,6 +2921,16 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen place_autocomplete_button_padding
+dimen place_autocomplete_powered_by_google_height
+dimen place_autocomplete_powered_by_google_start
+dimen place_autocomplete_prediction_height
+dimen place_autocomplete_prediction_horizontal_margin
+dimen place_autocomplete_prediction_primary_text
+dimen place_autocomplete_prediction_secondary_text
+dimen place_autocomplete_progress_horizontal_margin
+dimen place_autocomplete_progress_size
+dimen place_autocomplete_separator_start
 dimen places_autocomplete_button_padding
 dimen places_autocomplete_overlay_padding
 dimen places_autocomplete_powered_by_google_height
@@ -3166,9 +3182,13 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable password
 drawable places_autocomplete_toolbar_shadow
+drawable places_ic_clear
+drawable places_ic_search
 drawable places_powered_by_google_dark
 drawable places_powered_by_google_light
 drawable plus
+drawable powered_by_google_dark
+drawable powered_by_google_light
 drawable profile
 drawable promocode
 drawable quantum_ic_arrow_back_grey600_24
@@ -3193,6 +3213,7 @@ id Custom
 id ETConfirmPassword
 id ETPassword
 id FUNCTION
+id From_searchView
 id LLCarDetails
 id LLRides
 id LL_SocialLogins
@@ -3307,6 +3328,7 @@ id btFb
 id btGoogle
 id bt_Login
 id bt_Signup
+id bt_Submit
 id bt_book
 id btcalling
 id buttonPanel
@@ -3381,7 +3403,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawer_layout
+id drawerlayout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3413,6 +3435,11 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id fragment_myRides
+id fragment_profile
+id fragment_promocode
+id fragment_rewards
+id fragment_setting
 id from
 id frost
 id fullscreen_header
@@ -3480,7 +3507,6 @@ id ll_rewards
 id locale
 id logout
 id ltr
-id map
 id marquee
 id masked
 id match_constraint
@@ -3539,13 +3565,11 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id my_rides
+id myRides
 id nav_controller_view_tag
 id nav_home
 id nav_host_fragment_container
 id nav_host_fragment_content_navigation
-id nav_profile
-id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3553,6 +3577,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id navigation_view
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3585,10 +3610,19 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id place_autocomplete_clear_button
+id place_autocomplete_powered_by_google
+id place_autocomplete_prediction_primary_text
+id place_autocomplete_prediction_secondary_text
+id place_autocomplete_progress
+id place_autocomplete_search_button
+id place_autocomplete_search_input
+id place_autocomplete_separator
 id places_autocomplete_back_button
 id places_autocomplete_clear_button
 id places_autocomplete_content
 id places_autocomplete_error_message
+id places_autocomplete_fragment
 id places_autocomplete_list
 id places_autocomplete_powered_by_google
 id places_autocomplete_powered_by_google_separator
@@ -3606,9 +3640,10 @@ id places_autocomplete_try_again_progress
 id position
 id postLayout
 id pressed
+id profile
 id progress_circular
 id progress_horizontal
-id promo
+id promocode
 id radio
 id rating
 id ratio
@@ -3649,8 +3684,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id settings
-id share
+id setting
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3735,6 +3769,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id to
+id to_search
 id toggle
 id toolbar
 id top
@@ -3915,7 +3950,6 @@ layout activity_forgot_password
 layout activity_google_map
 layout activity_login
 layout activity_main
-layout activity_navigation
 layout activity_rider_details
 layout activity_search_rides
 layout activity_signup
@@ -3945,6 +3979,11 @@ layout fragment_find_ride
 layout fragment_gallery
 layout fragment_google_map
 layout fragment_home
+layout fragment_my_rides
+layout fragment_profile
+layout fragment_promocode
+layout fragment_rewards
+layout fragment_settings
 layout fragment_slideshow
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3994,6 +4033,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout nav_header
 layout nav_header_navigation
 layout navigation_layout
 layout notification_action
@@ -4002,6 +4042,10 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout place_autocomplete_fragment
+layout place_autocomplete_item_powered_by_google
+layout place_autocomplete_item_prediction
+layout place_autocomplete_progress
 layout places_autocomplete_activity
 layout places_autocomplete_fragment
 layout places_autocomplete_impl_error
@@ -4016,7 +4060,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout splash_screen_view
 layout support_simple_spinner_dropdown_item
-menu activity_main_drawer
+menu nav_menu
 menu navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -4193,6 +4237,8 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string place_autocomplete_clear_button
+string place_autocomplete_search_hint
 string places_autocomplete_clear_button
 string places_autocomplete_label
 string places_autocomplete_no_results_for_query
@@ -5355,7 +5401,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
-styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop uiScrollGesturesDuringRotateOrZoom
+styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType android_popupElevation simpleItemLayout simpleItemSelectedColor simpleItemSelectedRippleColor simpleItems

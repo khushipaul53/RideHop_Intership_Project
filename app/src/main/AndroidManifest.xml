@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RideHop_Intership_Project">
         <activity
+            android:name=".Fragment.ProfileFragment"
+            android:exported="false" />
+        <activity
             android:name=".GoogleMap.GoogleMapActivity"
             android:exported="false" />
         <activity
@@ -71,8 +74,8 @@
         </activity>
 
         <meta-data
-            android:name = "keyValue"
-            android:value = "${KEY}"/>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE" />
     </application>
 
 </manifest>

@@ -1,80 +1,132 @@
 package com.example.ridehop_intership_project.Activity
 
-import android.content.pm.ApplicationInfo
-import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.databinding.DataBindingUtil
 import com.example.ridehop_intership_project.R
-import com.example.ridehop_intership_project.databinding.ActivityCreateOwnRideBinding
 import com.google.android.gms.common.api.Status
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.model.Place
+import com.google.android.libraries.places.api.model.TypeFilter
+import com.google.android.libraries.places.widget.Autocomplete
+import com.google.android.libraries.places.widget.AutocompleteActivity
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
+import com.google.android.libraries.places.widget.model.AutocompleteActivityMode
+
 
 class CreateOwnRideActivity : AppCompatActivity() {
-    lateinit var binding: ActivityCreateOwnRideBinding
+    //     lateinit var binding: ActivityCreateOwnRideBinding
+    lateinit var From: EditText
+    lateinit var To: EditText
+    var from= ""
+    private val AUTOCOMPLETE_REQUEST_CODE = 1
+    lateinit var bt_Login: AppCompatButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=DataBindingUtil.setContentView(this,R.layout.activity_create_own_ride)
 
-        val ai: ApplicationInfo = this.packageManager
-            .getApplicationInfo(this.packageName, PackageManager.GET_META_DATA)
-        val value = ai.metaData["keyValue"]
-        val apiKey = value.toString()
+        setContentView(R.layout.activity_create_own_ride)
+        From = findViewById(R.id.From_searchView)
+        To= findViewById(R.id.to)
+        Places.initialize(applicationContext, "AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE")
 
-        if (!Places.isInitialized()) {
-            Places.initialize(applicationContext, apiKey)
-            val autocompleteSupportFragment1 = supportFragmentManager.findFragmentById(R.id.map) as AutocompleteSupportFragment?
+        From.setOnClickListener {
+            from="from"
+            startAutocompleteActivity()
+        }
+        To.setOnClickListener(View.OnClickListener {
+             from="to"
+            startAutocompleteActivity()
 
-            autocompleteSupportFragment1!!.setPlaceFields(
-                listOf(
+        })
+        bt_Login.setOnClickListener(View.OnClickListener {
+//            startActivity(Intent(  this, MyRides::class.java))
 
-                    Place.Field.NAME,
-                    Place.Field.ADDRESS,
-                    Place.Field.PHONE_NUMBER,
-                    Place.Field.LAT_LNG,
-                    Place.Field.OPENING_HOURS,
-                    Place.Field.RATING,
-                    Place.Field.USER_RATINGS_TOTAL
-
-                )
-            )
-            autocompleteSupportFragment1.setOnPlaceSelectedListener(object :
-                PlaceSelectionListener {
-                override fun onPlaceSelected(place: Place){
+        })
 
 
-                    // Information about the place
-                    val name = place.name
-                    val address = place.address
-                    val phone = place.phoneNumber.toString()
-                    val latlng = place.latLng
-                    val latitude = latlng?.latitude
-                    val longitude = latlng?.longitude
 
-                    val isOpenStatus : String = if(place.isOpen == true){
-                        "Open"
-                    } else {
-                        "Closed"
-                    }
+        // Initialize the AutocompleteSupportFragment
+//        val autocompleteFragment = supportFragmentManager.findFragmentById(R.id.places_autocomplete_fragment)
+//                    as AutocompleteSupportFragment
+//
+//        // Set the Place Fields to retrieve
+//        autocompleteFragment.setPlaceFields(listOf(Place.Field.ID, Place.Field.NAME))
+//
+//        // Set the Autocomplete Activity Mode to fullscreen or overlay
+//        autocompleteFragment.setActivityMode(AutocompleteActivityMode.FULLSCREEN)
 
-                    val rating = place.rating
-                    val userRatings = place.userRatingsTotal
-
-                    binding.from.text = "Name: $name \nAddress: $address \nPhone Number: $phone \n" +
-                            "Latitude, Longitude: $latitude , $longitude \nIs open: $isOpenStatus \n" +
-                            "Rating: $rating \nUser ratings: $userRatings"
-                }
-
-                override fun onError(p0: Status) {
-                    Toast.makeText(applicationContext,"Some error occurred", Toast.LENGTH_SHORT).show()
-                }
-            })
+        // Handle place selection
+        // Set up place selection listener
+//
+//        autocompleteFragment.setOnPlaceSelectedListener(object : PlaceSelectionListener {
+//            override fun onPlaceSelected(place: Place) {
+//                val placeName = place.name
+//                val placeAddress = place.address
+//                val placeId = place.id
+//
+//                Toast.makeText(this@CreateOwnRideActivity, placeName, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            override fun onError(status: Status) {}
+//        })
 
 
     }
-}
+
+    private fun startAutocompleteActivity() {
+
+        val autocompleteIntent =
+            Autocomplete.IntentBuilder(
+                AutocompleteActivityMode.OVERLAY,
+                listOf(Place.Field.ID, Place.Field.NAME, Place.Field.ADDRESS)
+            )
+                .setTypeFilter(TypeFilter.ADDRESS) // Optional: Specify the type of place data to return
+                .build(this)
+
+        // Start the Autocomplete activity
+        startActivityForResult(autocompleteIntent, AUTOCOMPLETE_REQUEST_CODE)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == AUTOCOMPLETE_REQUEST_CODE) {
+            when (resultCode) {
+                Activity.RESULT_OK -> {
+                    val place = Autocomplete.getPlaceFromIntent(data!!)
+                    val placeName = place.name
+                    val placeAddress = place.address
+
+                    // Populate the EditText with the selected place's information
+                   Toast.makeText(this,placeAddress,Toast.LENGTH_SHORT).show()
+                    if(from.equals("from"))
+                    {
+                        From.setText(placeAddress)
+
+                    }
+                    else if(from.equals("to"))
+                    {
+                        To.setText(placeAddress)
+
+                    }
+                }
+
+                AutocompleteActivity.RESULT_ERROR -> {
+                    val status = Autocomplete.getStatusFromIntent(data!!)
+                    Toast.makeText(this,status.statusMessage,Toast.LENGTH_SHORT).show()
+                }
+
+                Activity.RESULT_CANCELED -> {
+                    // The user canceled the operation.
+                }
+            }
+        }
+    }
 }

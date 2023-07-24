@@ -15,7 +15,7 @@ public class ActivityDashboardBindingImpl extends ActivityDashboardBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.app_bar_navigation, 1);
-        sViewsWithIds.put(R.id.nav_view, 2);
+        sViewsWithIds.put(R.id.navigation_view, 2);
     }
     // views
     // variables
@@ -32,7 +32,7 @@ public class ActivityDashboardBindingImpl extends ActivityDashboardBinding  {
             , (androidx.drawerlayout.widget.DrawerLayout) bindings[0]
             , (com.google.android.material.navigation.NavigationView) bindings[2]
             );
-        this.drawerLayout.setTag(null);
+        this.drawerlayout.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
