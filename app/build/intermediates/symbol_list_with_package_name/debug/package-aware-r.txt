@@ -3042,6 +3042,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3082,6 +3083,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit
 drawable edit_text
 drawable facebook
 drawable forgot_password
@@ -3090,6 +3092,7 @@ drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home
+drawable ic_car
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3190,6 +3193,7 @@ drawable plus
 drawable powered_by_google_dark
 drawable powered_by_google_light
 drawable profile
+drawable profile_photo_back
 drawable promocode
 drawable quantum_ic_arrow_back_grey600_24
 drawable quantum_ic_clear_grey600_24
@@ -3202,6 +3206,7 @@ drawable share
 drawable side_nav_bar
 drawable splash_icon
 drawable test_level_drawable
+drawable ticket_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
@@ -3226,12 +3231,14 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TvCartype
 id TvConfirmPassword
 id TvEmail
 id TvForgot
 id TvGender
 id TvName
 id TvPassword
+id TvPhone
 id TvSignup
 id accelerate
 id accessibility_action_clickable_span
@@ -3326,6 +3333,7 @@ id bounceStart
 id btEmail
 id btFb
 id btGoogle
+id bt_Edit
 id bt_Login
 id bt_Signup
 id bt_Submit
@@ -3460,6 +3468,7 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id hybrid
+id ic_back
 id icon
 id icon_group
 id icon_only
@@ -3659,6 +3668,8 @@ id rl_layout
 id rounded
 id row_index_key
 id rtl
+id rvBookedItems
+id rvOfferedItems
 id rvRides
 id satellite
 id save_non_transition_alpha
@@ -3729,6 +3740,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tabs
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3794,12 +3806,19 @@ id tvRidesDetails
 id tvSeats
 id tvVechicle
 id tv_heading
+id tvbooking
+id tvcustomerName
+id tvdate
+id tvdatentime
+id tvfrom
+id tvto
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewPager
 id viewPagerMain
 id view_offset_helper
 id view_transition
@@ -3950,12 +3969,14 @@ layout activity_forgot_password
 layout activity_google_map
 layout activity_login
 layout activity_main
+layout activity_my_rides
 layout activity_rider_details
 layout activity_search_rides
 layout activity_signup
 layout activity_signup2
 layout activity_splash
 layout app_bar_navigation
+layout booked_rides_item
 layout content_navigation
 layout custom_dialog
 layout dashboard_viewpager
@@ -3974,12 +3995,13 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_booked_rides
 layout fragment_dashboard
 layout fragment_find_ride
 layout fragment_gallery
 layout fragment_google_map
 layout fragment_home
-layout fragment_my_rides
+layout fragment_offered_rides
 layout fragment_profile
 layout fragment_promocode
 layout fragment_rewards
@@ -4042,6 +4064,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout offered_rides_item
 layout place_autocomplete_fragment
 layout place_autocomplete_item_powered_by_google
 layout place_autocomplete_item_prediction

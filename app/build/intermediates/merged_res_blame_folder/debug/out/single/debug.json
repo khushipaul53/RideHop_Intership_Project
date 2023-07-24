@@ -28,6 +28,10 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/rides_item.xml"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_edit.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-anydpi-v24/edit.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_activity_create_own_ride.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_create_own_ride.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_offered_rides_item.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/offered_rides_item.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xhdpi_share.png.flat",
@@ -132,12 +140,12 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/content_navigation.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xhdpi_messenger.png.flat",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xhdpi/messenger.png"
-    },
-    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xhdpi_plus.png.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xhdpi/plus.png"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xhdpi_messenger.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xhdpi/messenger.png"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xxhdpi_front_arrow.png.flat",
@@ -154,6 +162,10 @@
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_menu.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/menu.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-ldpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-ldpi/edit.png"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/menu_nav_menu.xml.flat",
@@ -276,6 +288,14 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/splash_icon.png"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_fragment_booked_rides.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_booked_rides.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_booked_rides_item.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/booked_rides_item.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_fragment_rewards.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_rewards.xml"
     },
@@ -284,8 +304,12 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/logout.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_fragment_my_rides.xml.flat",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_my_rides.xml"
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_back.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/back.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xxxhdpi/edit.png"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -308,6 +332,10 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/ic_menu_slideshow.xml"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_activity_my_rides.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_my_rides.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-ldpi_calling.png.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-ldpi/calling.png"
     },
@@ -322,6 +350,10 @@
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_ic_car.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/ic_car.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_front_arrow.png.flat",
@@ -352,6 +384,10 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-anydpi-v24/plus.xml"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xxhdpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xxhdpi/edit.png"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_button_google.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/button_google.xml"
     },
@@ -370,6 +406,10 @@
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_activity_google_map.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_google_map.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xhdpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xhdpi/edit.png"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_activity_search_rides.xml.flat",
@@ -412,6 +452,14 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xxxhdpi/messenger.png"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-mdpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-mdpi/edit.png"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_ticket_background.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/ticket_background.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_password.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/password.xml"
     },
@@ -444,6 +492,10 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/layout_fragment_offered_rides.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_offered_rides.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_forgot_password.xml.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/forgot_password.xml"
     },
@@ -452,11 +504,19 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable_profile_photo_back.xml.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/drawable/profile_photo_back.xml"
+    },
+    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_user.png.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-xxxhdpi/user.png"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/merged_res/debug/drawable-hdpi_edit.png.flat",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/generated/res/pngs/debug/drawable-hdpi/edit.png"
     }
 ]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.OfferedRidesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOfferedItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</layout>

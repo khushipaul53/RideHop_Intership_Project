@@ -1,5 +1,6 @@
 package com.example.ridehop_intership_project.Activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -49,7 +50,8 @@ class DashboardActivity : AppCompatActivity() {
                     navController.navigate(R.id.fragment_rewards)
                 }
                 R.id.myRides -> {
-                    navController.navigate(R.id.fragment_myRides)
+                    startActivity(Intent(applicationContext, MyRidesActivity::class.java))
+//                    navController.navigate(R.id.fragment_myRides)
                 }
 
                 R.id.logout -> {

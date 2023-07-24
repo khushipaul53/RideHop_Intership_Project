@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.RideHop_Intership_Project" >
         <activity
+            android:name="com.example.ridehop_intership_project.Activity.MyRidesActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.ridehop_intership_project.Fragment.ProfileFragment"
             android:exported="false" />
         <activity

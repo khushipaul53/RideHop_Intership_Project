@@ -8,11 +8,15 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.ridehop_intership_project.databinding.ActivityDashboardBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivityLoginBindingImpl;
+import com.example.ridehop_intership_project.databinding.ActivityMyRidesBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivityRiderDetailsBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivitySearchRidesBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivitySignupBindingImpl;
 import com.example.ridehop_intership_project.databinding.ActivitySplashBindingImpl;
+import com.example.ridehop_intership_project.databinding.FragmentBookedRidesBindingImpl;
 import com.example.ridehop_intership_project.databinding.FragmentDashboardBindingImpl;
+import com.example.ridehop_intership_project.databinding.FragmentOfferedRidesBindingImpl;
+import com.example.ridehop_intership_project.databinding.FragmentProfileBindingImpl;
 import com.example.ridehop_intership_project.databinding.NavigationLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -29,28 +33,40 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYLOGIN = 2;
 
-  private static final int LAYOUT_ACTIVITYRIDERDETAILS = 3;
+  private static final int LAYOUT_ACTIVITYMYRIDES = 3;
 
-  private static final int LAYOUT_ACTIVITYSEARCHRIDES = 4;
+  private static final int LAYOUT_ACTIVITYRIDERDETAILS = 4;
 
-  private static final int LAYOUT_ACTIVITYSIGNUP = 5;
+  private static final int LAYOUT_ACTIVITYSEARCHRIDES = 5;
 
-  private static final int LAYOUT_ACTIVITYSPLASH = 6;
+  private static final int LAYOUT_ACTIVITYSIGNUP = 6;
 
-  private static final int LAYOUT_FRAGMENTDASHBOARD = 7;
+  private static final int LAYOUT_ACTIVITYSPLASH = 7;
 
-  private static final int LAYOUT_NAVIGATIONLAYOUT = 8;
+  private static final int LAYOUT_FRAGMENTBOOKEDRIDES = 8;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
+  private static final int LAYOUT_FRAGMENTDASHBOARD = 9;
+
+  private static final int LAYOUT_FRAGMENTOFFEREDRIDES = 10;
+
+  private static final int LAYOUT_FRAGMENTPROFILE = 11;
+
+  private static final int LAYOUT_NAVIGATIONLAYOUT = 12;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(12);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_dashboard, LAYOUT_ACTIVITYDASHBOARD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_my_rides, LAYOUT_ACTIVITYMYRIDES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_rider_details, LAYOUT_ACTIVITYRIDERDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_search_rides, LAYOUT_ACTIVITYSEARCHRIDES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_signup, LAYOUT_ACTIVITYSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.fragment_booked_rides, LAYOUT_FRAGMENTBOOKEDRIDES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.fragment_dashboard, LAYOUT_FRAGMENTDASHBOARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.fragment_offered_rides, LAYOUT_FRAGMENTOFFEREDRIDES);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.ridehop_intership_project.R.layout.navigation_layout, LAYOUT_NAVIGATIONLAYOUT);
   }
 
@@ -74,6 +90,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityLoginBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_login is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYMYRIDES: {
+          if ("layout/activity_my_rides_0".equals(tag)) {
+            return new ActivityMyRidesBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_my_rides is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYRIDERDETAILS: {
           if ("layout/activity_rider_details_0".equals(tag)) {
@@ -99,11 +121,29 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
         }
+        case  LAYOUT_FRAGMENTBOOKEDRIDES: {
+          if ("layout/fragment_booked_rides_0".equals(tag)) {
+            return new FragmentBookedRidesBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_booked_rides is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTDASHBOARD: {
           if ("layout/fragment_dashboard_0".equals(tag)) {
             return new FragmentDashboardBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_dashboard is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTOFFEREDRIDES: {
+          if ("layout/fragment_offered_rides_0".equals(tag)) {
+            return new FragmentOfferedRidesBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_offered_rides is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTPROFILE: {
+          if ("layout/fragment_profile_0".equals(tag)) {
+            return new FragmentProfileBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_profile is invalid. Received: " + tag);
         }
         case  LAYOUT_NAVIGATIONLAYOUT: {
           if ("layout/navigation_layout_0".equals(tag)) {
@@ -164,16 +204,20 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(8);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(12);
 
     static {
       sKeys.put("layout/activity_dashboard_0", com.example.ridehop_intership_project.R.layout.activity_dashboard);
       sKeys.put("layout/activity_login_0", com.example.ridehop_intership_project.R.layout.activity_login);
+      sKeys.put("layout/activity_my_rides_0", com.example.ridehop_intership_project.R.layout.activity_my_rides);
       sKeys.put("layout/activity_rider_details_0", com.example.ridehop_intership_project.R.layout.activity_rider_details);
       sKeys.put("layout/activity_search_rides_0", com.example.ridehop_intership_project.R.layout.activity_search_rides);
       sKeys.put("layout/activity_signup_0", com.example.ridehop_intership_project.R.layout.activity_signup);
       sKeys.put("layout/activity_splash_0", com.example.ridehop_intership_project.R.layout.activity_splash);
+      sKeys.put("layout/fragment_booked_rides_0", com.example.ridehop_intership_project.R.layout.fragment_booked_rides);
       sKeys.put("layout/fragment_dashboard_0", com.example.ridehop_intership_project.R.layout.fragment_dashboard);
+      sKeys.put("layout/fragment_offered_rides_0", com.example.ridehop_intership_project.R.layout.fragment_offered_rides);
+      sKeys.put("layout/fragment_profile_0", com.example.ridehop_intership_project.R.layout.fragment_profile);
       sKeys.put("layout/navigation_layout_0", com.example.ridehop_intership_project.R.layout.navigation_layout);
     }
   }
