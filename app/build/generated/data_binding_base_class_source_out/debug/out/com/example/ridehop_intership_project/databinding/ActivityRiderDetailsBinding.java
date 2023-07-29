@@ -4,16 +4,20 @@ package com.example.ridehop_intership_project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.ridehop_intership_project.R;
+import com.google.android.material.appbar.AppBarLayout;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -25,6 +29,9 @@ public abstract class ActivityRiderDetailsBinding extends ViewDataBinding {
   public final LinearLayout LLRides;
 
   @NonNull
+  public final AppBarLayout appbar;
+
+  @NonNull
   public final AppCompatButton btBook;
 
   @NonNull
@@ -34,10 +41,19 @@ public abstract class ActivityRiderDetailsBinding extends ViewDataBinding {
   public final LinearLayout btcalling;
 
   @NonNull
+  public final ImageButton icBack;
+
+  @NonNull
   public final ImageView imageview;
 
   @NonNull
   public final RatingBar rating;
+
+  @NonNull
+  public final RelativeLayout rlLayout;
+
+  @NonNull
+  public final Toolbar toolbar;
 
   @NonNull
   public final TextView tvAge;
@@ -52,6 +68,9 @@ public abstract class ActivityRiderDetailsBinding extends ViewDataBinding {
   public final TextView tvEmail;
 
   @NonNull
+  public final TextView tvHeading;
+
+  @NonNull
   public final TextView tvName;
 
   @NonNull
@@ -64,22 +83,28 @@ public abstract class ActivityRiderDetailsBinding extends ViewDataBinding {
   public final TextView tvVechicle;
 
   protected ActivityRiderDetailsBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout LLCarDetails, LinearLayout LLRides, AppCompatButton btBook, LinearLayout btEmail,
-      LinearLayout btcalling, ImageView imageview, RatingBar rating, TextView tvAge,
-      TextView tvCarType, TextView tvContact, TextView tvEmail, TextView tvName,
+      LinearLayout LLCarDetails, LinearLayout LLRides, AppBarLayout appbar, AppCompatButton btBook,
+      LinearLayout btEmail, LinearLayout btcalling, ImageButton icBack, ImageView imageview,
+      RatingBar rating, RelativeLayout rlLayout, Toolbar toolbar, TextView tvAge,
+      TextView tvCarType, TextView tvContact, TextView tvEmail, TextView tvHeading, TextView tvName,
       TextView tvPhoneNumber, TextView tvPrice, TextView tvVechicle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.LLCarDetails = LLCarDetails;
     this.LLRides = LLRides;
+    this.appbar = appbar;
     this.btBook = btBook;
     this.btEmail = btEmail;
     this.btcalling = btcalling;
+    this.icBack = icBack;
     this.imageview = imageview;
     this.rating = rating;
+    this.rlLayout = rlLayout;
+    this.toolbar = toolbar;
     this.tvAge = tvAge;
     this.tvCarType = tvCarType;
     this.tvContact = tvContact;
     this.tvEmail = tvEmail;
+    this.tvHeading = tvHeading;
     this.tvName = tvName;
     this.tvPhoneNumber = tvPhoneNumber;
     this.tvPrice = tvPrice;

@@ -90,13 +90,17 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:textColorHighlight="@color/white"
+                android:backgroundTint="@android:color/white"
                 android:layout_margin="20dp"
-                android:layout_weight=".7"
-                android:textSize="30dp"
-                android:background="@drawable/edit_text"
-               >
+                android:layout_weight="0.7"
+
+
+                >
 
             </EditText>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -120,37 +124,22 @@
 
             <EditText
                 android:layout_width="0dp"
-                android:layout_weight=".7"
                 android:layout_height="wrap_content"
+                android:textColorHighlight="@color/white"
+                android:backgroundTint="@android:color/white"
                 android:layout_margin="20dp"
-                android:textSize="30dp"
+                android:layout_weight="0.7"
 
-                android:background="@drawable/edit_text"
                 >
 
             </EditText>
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/Custom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:layout_marginRight="20dp"
-            android:text="Custom"
-            android:textColor="#0000ff"
-            android:textStyle="bold"
-            android:textSize="10dp"
-        >
-
-        </TextView>
 
         <LinearLayout
             android:id="@+id/llCustom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
-            android:visibility="gone"
             android:orientation="horizontal">
 
             <TextView
@@ -167,13 +156,14 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_datetime"
                 android:layout_width="0dp"
-                android:layout_weight=".7"
                 android:layout_height="wrap_content"
+                android:textColorHighlight="@color/white"
+                android:backgroundTint="@android:color/white"
                 android:layout_margin="20dp"
-                android:textSize="30dp"
+                android:layout_weight="0.7"
 
-                android:background="@drawable/edit_text"
                 >
 
             </EditText>
@@ -199,15 +189,21 @@
 
             </TextView>
 
-            <Spinner
-                android:id="@+id/spSeats"
-                android:layout_width="0dp"
-                android:layout_weight=".7"
+            <RelativeLayout
+                android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/edit_text"
-                >
-            </Spinner>
+                android:layout_weight=".7"
+
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text">
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:autofillHints="1" />
+            </RelativeLayout>
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton

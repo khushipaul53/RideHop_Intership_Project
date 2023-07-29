@@ -21,11 +21,11 @@ public class FragmentDashboardBindingImpl extends FragmentDashboardBinding  {
         sViewsWithIds.put(R.id.viewPagerMain, 5);
         sViewsWithIds.put(R.id.from, 6);
         sViewsWithIds.put(R.id.to, 7);
-        sViewsWithIds.put(R.id.Custom, 8);
-        sViewsWithIds.put(R.id.llCustom, 9);
-        sViewsWithIds.put(R.id.dateTime, 10);
+        sViewsWithIds.put(R.id.llCustom, 8);
+        sViewsWithIds.put(R.id.dateTime, 9);
+        sViewsWithIds.put(R.id.et_datetime, 10);
         sViewsWithIds.put(R.id.tvSeats, 11);
-        sViewsWithIds.put(R.id.spSeats, 12);
+        sViewsWithIds.put(R.id.spType, 12);
         sViewsWithIds.put(R.id.bt_Login, 13);
         sViewsWithIds.put(R.id.fab, 14);
     }
@@ -40,13 +40,13 @@ public class FragmentDashboardBindingImpl extends FragmentDashboardBinding  {
     }
     private FragmentDashboardBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[8]
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
             , (androidx.appcompat.widget.AppCompatButton) bindings[13]
-            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.EditText) bindings[10]
             , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[14]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.LinearLayout) bindings[9]
+            , (android.widget.LinearLayout) bindings[8]
             , (android.widget.RelativeLayout) bindings[0]
             , (android.widget.ImageButton) bindings[3]
             , (android.widget.Spinner) bindings[12]

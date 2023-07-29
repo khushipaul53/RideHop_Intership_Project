@@ -34,18 +34,19 @@ class CreateOwnRideActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_create_own_ride)
         From = findViewById(R.id.From_searchView)
-        To= findViewById(R.id.to)
+        To= findViewById(R.id.to_search)
+        bt_Login=findViewById(R.id.bt_Submit)
         Places.initialize(applicationContext, "AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE")
 
         From.setOnClickListener {
             from="from"
             startAutocompleteActivity()
         }
-        To.setOnClickListener(View.OnClickListener {
-             from="to"
-            startAutocompleteActivity()
-
-        })
+//        To.setOnClickListener(View.OnClickListener {
+//             from="to"
+//            startAutocompleteActivity()
+//
+//        })
         bt_Login.setOnClickListener(View.OnClickListener {
 //            startActivity(Intent(  this, MyRides::class.java))
 

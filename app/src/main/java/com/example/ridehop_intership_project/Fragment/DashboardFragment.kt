@@ -1,7 +1,12 @@
 package com.example.ridehop_intership_project.Fragment
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +14,15 @@ import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
+import com.example.ridehop_intership_project.Activity.CreateOwnRideActivity
 import com.example.ridehop_intership_project.Activity.DashboardActivity
 import com.example.ridehop_intership_project.Activity.SearchRidesActivity
 import com.example.ridehop_intership_project.Adapter.SliderViewPagerAdapter
-import com.example.ridehop_intership_project.Activity.CreateOwnRideActivity
 import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.databinding.FragmentDashboardBinding
+import java.util.Calendar
 import java.util.Timer
+import java.util.TimerTask
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +43,7 @@ class DashboardFragment : Fragment() {
     var currentPage=0
     lateinit var timer: Timer
     val DELAY_MS: Long = 500 //delay in milliseconds before task is to be executed
+    private val sliderHandler: Handler = Handler()
 
     val PERIOD_MS: Long = 3000
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,7 +85,7 @@ class DashboardFragment : Fragment() {
 
         // Set the ArrayAdapter (ad) data on the
         // Spinner which binds data to spinner
-        binding.spSeats.setAdapter(adapter)
+        binding.spType.setAdapter(adapter)
         imageList=ArrayList()
         imageList!!.add(R.drawable.img1)
         imageList!!.add(R.drawable.img2)
@@ -86,6 +94,7 @@ class DashboardFragment : Fragment() {
 //
         viewPagerAdapter = SliderViewPagerAdapter(activity as DashboardActivity, imageList)
         binding.viewPagerMain.adapter = viewPagerAdapter
+        val timer = Timer()
 
         binding!!.btLogin.setOnClickListener(View.OnClickListener {
             var b=Bundle()
@@ -101,8 +110,36 @@ class DashboardFragment : Fragment() {
             startActivity(Intent(activity as DashboardActivity, CreateOwnRideActivity::class.java))
 
         })
+
+        binding!!.etDatetime.setOnClickListener(View.OnClickListener {
+            val currentDate = Calendar.getInstance()
+            val  date = Calendar.getInstance()
+            DatePickerDialog(
+                activity as DashboardActivity,
+                { view, year, monthOfYear, dayOfMonth ->
+                    date.set(year, monthOfYear, dayOfMonth)
+                    TimePickerDialog(
+                        context,
+                        { view, hourOfDay, minute ->
+                            date.set(Calendar.HOUR_OF_DAY, hourOfDay)
+                            date.set(Calendar.MINUTE, minute)
+                            Log.v(TAG, "The choosen one " + date.getTime())
+                            binding!!.etDatetime.setText(date.getTime().toString())
+                        },
+                        currentDate[Calendar.HOUR_OF_DAY],
+                        currentDate[Calendar.MINUTE], false
+                    ).show()
+                }, currentDate[Calendar.YEAR], currentDate[Calendar.MONTH],
+                currentDate[Calendar.DATE]
+            ).show()
+        })
+
+
         return binding.root
 
     }
+    
 
 }
+
+

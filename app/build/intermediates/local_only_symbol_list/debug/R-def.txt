@@ -20,6 +20,7 @@ drawable button
 drawable button_fb
 drawable button_google
 drawable calling
+drawable congo
 drawable connect_rider
 drawable curved_retangle
 drawable edit
@@ -40,6 +41,7 @@ drawable img2
 drawable img3
 drawable img4
 drawable logout
+drawable loyality_back
 drawable menu
 drawable messenger
 drawable password
@@ -55,13 +57,13 @@ drawable side_nav_bar
 drawable splash_icon
 drawable ticket_background
 drawable user
-id Custom
 id ETConfirmPassword
 id ETPassword
 id From_searchView
 id LLCarDetails
 id LLRides
 id LL_SocialLogins
+id SliderViewPager
 id TvCartype
 id TvConfirmPassword
 id TvEmail
@@ -77,6 +79,7 @@ id appbar
 id btEmail
 id btFb
 id btGoogle
+id bt_Continue
 id bt_Edit
 id bt_Login
 id bt_Signup
@@ -87,6 +90,9 @@ id cb_terms
 id dateTime
 id datetime
 id drawerlayout
+id et_Dropoff
+id et_datetime
+id et_pickup
 id fab
 id fragment_myRides
 id fragment_profile
@@ -102,9 +108,12 @@ id idIVImage
 id idRadioGroup
 id imageView
 id imageview
+id iv_edit_pic
+id iv_profile_pic
 id listStops
 id listview_background_shape
 id llCustom
+id llPicture
 id ll_Settings
 id ll_home
 id ll_logout
@@ -119,6 +128,7 @@ id nav_home
 id nav_host_fragment_content_navigation
 id navigation_view
 id nvView
+id pickupFrom
 id places_autocomplete_fragment
 id profile
 id promocode
@@ -131,8 +141,9 @@ id rvOfferedItems
 id rvRides
 id setting
 id sideMenu
-id spSeats
+id spType
 id tabs
+id text
 id textView
 id text_gallery
 id text_home
@@ -142,8 +153,10 @@ id to_search
 id toolbar
 id tvAge
 id tvCarType
+id tvCongo
 id tvContact
 id tvEmail
+id tvMessage
 id tvName
 id tvPhoneNumber
 id tvPrice
@@ -155,7 +168,9 @@ id tvbooking
 id tvcustomerName
 id tvdate
 id tvdatentime
+id tvdropOff
 id tvfrom
+id tvpoints
 id tvto
 id viewPager
 id viewPagerMain
@@ -191,6 +206,7 @@ layout nav_header
 layout nav_header_navigation
 layout navigation_layout
 layout offered_rides_item
+layout rewards_viewpager
 layout rides_item
 menu nav_menu
 menu navigation
@@ -199,6 +215,9 @@ mipmap ic_launcher_round
 navigation mobile_navigation
 string action_settings
 string app_name
+string facebook_app_id
+string facebook_client_token
+string fb_login_protocol_scheme
 string hello_blank_fragment
 string menu_gallery
 string menu_home
@@ -209,6 +228,7 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string title_activity_navigation
+style DialogTheme
 style Theme.RideHop_Intership_Project
 style Theme.RideHop_Intership_Project.AppBarOverlay
 style Theme.RideHop_Intership_Project.NoActionBar

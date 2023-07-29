@@ -4,6 +4,7 @@ package com.example.ridehop_intership_project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -24,9 +25,6 @@ import java.lang.Object;
 
 public abstract class FragmentDashboardBinding extends ViewDataBinding {
   @NonNull
-  public final TextView Custom;
-
-  @NonNull
   public final AppBarLayout appbar;
 
   @NonNull
@@ -34,6 +32,9 @@ public abstract class FragmentDashboardBinding extends ViewDataBinding {
 
   @NonNull
   public final TextView dateTime;
+
+  @NonNull
+  public final EditText etDatetime;
 
   @NonNull
   public final FloatingActionButton fab;
@@ -51,7 +52,7 @@ public abstract class FragmentDashboardBinding extends ViewDataBinding {
   public final ImageButton sideMenu;
 
   @NonNull
-  public final Spinner spSeats;
+  public final Spinner spType;
 
   @NonNull
   public final TextView to;
@@ -69,21 +70,21 @@ public abstract class FragmentDashboardBinding extends ViewDataBinding {
   public final ViewPager viewPagerMain;
 
   protected FragmentDashboardBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView Custom, AppBarLayout appbar, AppCompatButton btLogin, TextView dateTime,
+      AppBarLayout appbar, AppCompatButton btLogin, TextView dateTime, EditText etDatetime,
       FloatingActionButton fab, TextView from, LinearLayout llCustom, RelativeLayout rlLayout,
-      ImageButton sideMenu, Spinner spSeats, TextView to, Toolbar toolbar, TextView tvHeading,
+      ImageButton sideMenu, Spinner spType, TextView to, Toolbar toolbar, TextView tvHeading,
       TextView tvSeats, ViewPager viewPagerMain) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.Custom = Custom;
     this.appbar = appbar;
     this.btLogin = btLogin;
     this.dateTime = dateTime;
+    this.etDatetime = etDatetime;
     this.fab = fab;
     this.from = from;
     this.llCustom = llCustom;
     this.rlLayout = rlLayout;
     this.sideMenu = sideMenu;
-    this.spSeats = spSeats;
+    this.spType = spType;
     this.to = to;
     this.toolbar = toolbar;
     this.tvHeading = tvHeading;

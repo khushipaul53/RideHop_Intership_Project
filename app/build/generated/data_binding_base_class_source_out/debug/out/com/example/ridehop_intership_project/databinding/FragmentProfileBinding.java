@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -41,6 +42,12 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final ImageButton icBack;
 
   @NonNull
+  public final ImageView ivEditPic;
+
+  @NonNull
+  public final ImageView ivProfilePic;
+
+  @NonNull
   public final RelativeLayout rlLayout;
 
   @NonNull
@@ -51,8 +58,8 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
 
   protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView TvCartype, TextView TvEmail, TextView TvName, TextView TvPhone, AppBarLayout appbar,
-      AppCompatButton btEdit, ImageButton icBack, RelativeLayout rlLayout, Toolbar toolbar,
-      TextView tvHeading) {
+      AppCompatButton btEdit, ImageButton icBack, ImageView ivEditPic, ImageView ivProfilePic,
+      RelativeLayout rlLayout, Toolbar toolbar, TextView tvHeading) {
     super(_bindingComponent, _root, _localFieldCount);
     this.TvCartype = TvCartype;
     this.TvEmail = TvEmail;
@@ -61,6 +68,8 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
     this.appbar = appbar;
     this.btEdit = btEdit;
     this.icBack = icBack;
+    this.ivEditPic = ivEditPic;
+    this.ivProfilePic = ivProfilePic;
     this.rlLayout = rlLayout;
     this.toolbar = toolbar;
     this.tvHeading = tvHeading;

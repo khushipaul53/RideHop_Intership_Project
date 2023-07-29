@@ -12,10 +12,6 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_rewards.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_google_map.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_google_map.xml"
-    },
-    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/nav_header_navigation.xml",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/nav_header_navigation.xml"
     },
@@ -24,12 +20,12 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_navigation.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_navigation.xml"
-    },
-    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_promocode.xml",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_promocode.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booked_rides.xml",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_booked_rides.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
@@ -38,10 +34,6 @@
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/navigation_layout.xml",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/navigation_layout.xml"
-    },
-    {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_booked_rides.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_booked_rides.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
@@ -60,16 +52,16 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/booked_rides_item.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_signup.xml"
-    },
-    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_my_rides.xml",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_my_rides.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_my_rides.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_my_rides.xml"
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/rewards_viewpager.xml",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/rewards_viewpager.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup.xml",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/activity_signup.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_dashboard.xml",
@@ -100,12 +92,12 @@
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/rides_item.xml"
     },
     {
-        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_slideshow.xml",
-        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_slideshow.xml"
-    },
-    {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_offered_rides.xml",
         "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_offered_rides.xml"
+    },
+    {
+        "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_slideshow.xml",
+        "source": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/src/main/res/layout/fragment_slideshow.xml"
     },
     {
         "merged": "/Users/admin/Documents/MAC/Internship1/RideHop_Intership_Project/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_find_ride.xml",

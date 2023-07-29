@@ -72,23 +72,6 @@
                     }
                 },
                 {
-                    "source": "/Users/admin/.gradle/caches/transforms-3/5233be2953135ee84840e11a2ca9e9b9/transformed/play-services-basement-18.1.0/res/values-am/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "127",
-                        "endOffsets": "322"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4197",
-                        "endColumns": "131",
-                        "endOffsets": "4324"
-                    }
-                },
-                {
                     "source": "/Users/admin/.gradle/caches/transforms-3/8f98d205e03d36c076352735ef5381d2/transformed/play-services-places-17.0.0/res/values-am/values.xml",
                     "from": {
                         "startLines": "4,5",
@@ -122,6 +105,23 @@
                         "endLines": "5,33,34,35,36,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,109",
                         "endColumns": "12,74,88,101,76,63,84,61,57,84,61,57,65,61,54,95,56,58,55,66,104,79,80,128,72,70,81,50,50,65,65,72,80,67,72,70,66,84,66,86,87,73,67,84,50,63,79,81,61,63,62,94,88,84,90,54,54,75",
                         "endOffsets": "306,2999,3088,3190,3267,5337,5422,5484,5542,5627,5689,5747,5813,5875,5930,6026,6083,6142,6198,6265,6370,6450,6531,6660,6733,6804,6886,6937,6988,7054,7120,7193,7274,7342,7415,7486,7553,7638,7705,7792,7880,7954,8022,8107,8158,8222,8302,8384,8446,8510,8573,8668,8757,8842,8933,8988,9043,9333"
+                    }
+                },
+                {
+                    "source": "/Users/admin/.gradle/caches/transforms-3/6c55d43f40333c0618e519ee89a0226e/transformed/play-services-basement-18.2.0/res/values-am/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4197",
+                        "endColumns": "131",
+                        "endOffsets": "4324"
                     }
                 },
                 {

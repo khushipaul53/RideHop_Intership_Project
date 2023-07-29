@@ -5,15 +5,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ridehop_intership_project.R;
+import com.google.android.material.appbar.AppBarLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,10 +30,19 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final EditText FromSearchView;
 
   @NonNull
+  public final AppBarLayout appbar;
+
+  @NonNull
   public final AppCompatButton btSubmit;
 
   @NonNull
   public final TextView datetime;
+
+  @NonNull
+  public final EditText etDropoff;
+
+  @NonNull
+  public final EditText etPickup;
 
   @NonNull
   public final TextView from;
@@ -38,10 +51,25 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final RecyclerView listStops;
 
   @NonNull
+  public final TextView pickupFrom;
+
+  @NonNull
+  public final RelativeLayout rlLayout;
+
+  @NonNull
+  public final ImageButton sideMenu;
+
+  @NonNull
   public final TextView to;
 
   @NonNull
   public final EditText toSearch;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  @NonNull
+  public final TextView tvHeading;
 
   @NonNull
   public final TextView tvRidesDetails;
@@ -49,21 +77,36 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   @NonNull
   public final TextView tvSeats;
 
+  @NonNull
+  public final TextView tvdropOff;
+
   private ActivityCreateOwnRideBinding(@NonNull LinearLayout rootView,
-      @NonNull EditText FromSearchView, @NonNull AppCompatButton btSubmit,
-      @NonNull TextView datetime, @NonNull TextView from, @NonNull RecyclerView listStops,
-      @NonNull TextView to, @NonNull EditText toSearch, @NonNull TextView tvRidesDetails,
-      @NonNull TextView tvSeats) {
+      @NonNull EditText FromSearchView, @NonNull AppBarLayout appbar,
+      @NonNull AppCompatButton btSubmit, @NonNull TextView datetime, @NonNull EditText etDropoff,
+      @NonNull EditText etPickup, @NonNull TextView from, @NonNull RecyclerView listStops,
+      @NonNull TextView pickupFrom, @NonNull RelativeLayout rlLayout, @NonNull ImageButton sideMenu,
+      @NonNull TextView to, @NonNull EditText toSearch, @NonNull Toolbar toolbar,
+      @NonNull TextView tvHeading, @NonNull TextView tvRidesDetails, @NonNull TextView tvSeats,
+      @NonNull TextView tvdropOff) {
     this.rootView = rootView;
     this.FromSearchView = FromSearchView;
+    this.appbar = appbar;
     this.btSubmit = btSubmit;
     this.datetime = datetime;
+    this.etDropoff = etDropoff;
+    this.etPickup = etPickup;
     this.from = from;
     this.listStops = listStops;
+    this.pickupFrom = pickupFrom;
+    this.rlLayout = rlLayout;
+    this.sideMenu = sideMenu;
     this.to = to;
     this.toSearch = toSearch;
+    this.toolbar = toolbar;
+    this.tvHeading = tvHeading;
     this.tvRidesDetails = tvRidesDetails;
     this.tvSeats = tvSeats;
+    this.tvdropOff = tvdropOff;
   }
 
   @Override
@@ -99,6 +142,12 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.appbar;
+      AppBarLayout appbar = ViewBindings.findChildViewById(rootView, id);
+      if (appbar == null) {
+        break missingId;
+      }
+
       id = R.id.bt_Submit;
       AppCompatButton btSubmit = ViewBindings.findChildViewById(rootView, id);
       if (btSubmit == null) {
@@ -108,6 +157,18 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
       id = R.id.datetime;
       TextView datetime = ViewBindings.findChildViewById(rootView, id);
       if (datetime == null) {
+        break missingId;
+      }
+
+      id = R.id.et_Dropoff;
+      EditText etDropoff = ViewBindings.findChildViewById(rootView, id);
+      if (etDropoff == null) {
+        break missingId;
+      }
+
+      id = R.id.et_pickup;
+      EditText etPickup = ViewBindings.findChildViewById(rootView, id);
+      if (etPickup == null) {
         break missingId;
       }
 
@@ -123,6 +184,24 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pickupFrom;
+      TextView pickupFrom = ViewBindings.findChildViewById(rootView, id);
+      if (pickupFrom == null) {
+        break missingId;
+      }
+
+      id = R.id.rl_layout;
+      RelativeLayout rlLayout = ViewBindings.findChildViewById(rootView, id);
+      if (rlLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.sideMenu;
+      ImageButton sideMenu = ViewBindings.findChildViewById(rootView, id);
+      if (sideMenu == null) {
+        break missingId;
+      }
+
       id = R.id.to;
       TextView to = ViewBindings.findChildViewById(rootView, id);
       if (to == null) {
@@ -132,6 +211,18 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
       id = R.id.to_search;
       EditText toSearch = ViewBindings.findChildViewById(rootView, id);
       if (toSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_heading;
+      TextView tvHeading = ViewBindings.findChildViewById(rootView, id);
+      if (tvHeading == null) {
         break missingId;
       }
 
@@ -147,8 +238,15 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCreateOwnRideBinding((LinearLayout) rootView, FromSearchView, btSubmit,
-          datetime, from, listStops, to, toSearch, tvRidesDetails, tvSeats);
+      id = R.id.tvdropOff;
+      TextView tvdropOff = ViewBindings.findChildViewById(rootView, id);
+      if (tvdropOff == null) {
+        break missingId;
+      }
+
+      return new ActivityCreateOwnRideBinding((LinearLayout) rootView, FromSearchView, appbar,
+          btSubmit, datetime, etDropoff, etPickup, from, listStops, pickupFrom, rlLayout, sideMenu,
+          to, toSearch, toolbar, tvHeading, tvRidesDetails, tvSeats, tvdropOff);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
