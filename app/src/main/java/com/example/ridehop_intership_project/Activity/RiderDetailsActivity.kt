@@ -3,6 +3,8 @@ package com.example.ridehop_intership_project.Activity
 import android.app.AlertDialog
 import android.app.DirectAction
 import android.content.DialogInterface
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -32,7 +34,10 @@ class RiderDetailsActivity : AppCompatActivity() {
         binding.tvEmail.setText("qwerty@yopmail.com")
         binding.tvCarType.setText("Car Type: "+ "Toyota- Corolla")
         binding.tvVechicle.setText("Vechicle Number: "+ "")
+  binding!!.icBack.setOnClickListener(View.OnClickListener {
+      onBackPressed()
 
+  })
 
         binding.btBook.setOnClickListener(View.OnClickListener {
 
@@ -58,6 +63,19 @@ class RiderDetailsActivity : AppCompatActivity() {
         })
 
 
+        binding!!.btEmail.setOnClickListener(View.OnClickListener {
+            var  emailintent = Intent(Intent.ACTION_SEND);
+            emailintent.setType("text/plain")
+            startActivity(emailintent)
+
+        })
+
+        binding!!.btcalling.setOnClickListener(View.OnClickListener {
+            var intent =  Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:0987654321"));
+
+            startActivity(intent);
+        })
 
 
     }

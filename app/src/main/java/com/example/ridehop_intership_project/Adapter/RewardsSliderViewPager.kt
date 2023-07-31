@@ -14,15 +14,17 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
+import com.example.ridehop_intership_project.Fragment.RewardsFragment
 import com.example.ridehop_intership_project.Model.RewardsSlider
 import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.R.*
 import java.util.*
 import kotlin.collections.ArrayList
 
-class RewardsSliderViewPager(val context: Context, val imageList: ArrayList<RewardsSlider>) : PagerAdapter() {
+class RewardsSliderViewPager(val frag: RewardsFragment,val context:Context, val imageList: ArrayList<RewardsSlider>) : PagerAdapter() {
     // on below line we are creating a method
     // as get count to return the size of the list.
+      var fragment=frag
     override fun getCount(): Int {
         return imageList.size
     }
@@ -61,7 +63,9 @@ class RewardsSliderViewPager(val context: Context, val imageList: ArrayList<Rewa
         text.setText(imageList.get(position).message)
         var buttonText: AppCompatButton =itemView.findViewById<View>(id.bt_Continue) as AppCompatButton
         buttonText.setText(imageList.get(position).clickItemText)
-
+buttonText.setOnClickListener(View.OnClickListener {
+    fragment.invitefriend()
+})
 
         // on the below line we are adding this
         // item view to the container.

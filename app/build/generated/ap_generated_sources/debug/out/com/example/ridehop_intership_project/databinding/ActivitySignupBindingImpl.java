@@ -15,17 +15,22 @@ public class ActivitySignupBindingImpl extends ActivitySignupBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.TvEmail, 1);
-        sViewsWithIds.put(R.id.TvName, 2);
-        sViewsWithIds.put(R.id.TvPassword, 3);
-        sViewsWithIds.put(R.id.ETPassword, 4);
-        sViewsWithIds.put(R.id.TvConfirmPassword, 5);
-        sViewsWithIds.put(R.id.ETConfirmPassword, 6);
-        sViewsWithIds.put(R.id.TvGender, 7);
-        sViewsWithIds.put(R.id.idRadioGroup, 8);
-        sViewsWithIds.put(R.id.idBtnJavaRadio, 9);
-        sViewsWithIds.put(R.id.idBtnKotlinRadio, 10);
-        sViewsWithIds.put(R.id.cb_terms, 11);
-        sViewsWithIds.put(R.id.bt_Signup, 12);
+        sViewsWithIds.put(R.id.etEmail, 2);
+        sViewsWithIds.put(R.id.TvName, 3);
+        sViewsWithIds.put(R.id.etName, 4);
+        sViewsWithIds.put(R.id.TvAge, 5);
+        sViewsWithIds.put(R.id.etAge, 6);
+        sViewsWithIds.put(R.id.TvPassword, 7);
+        sViewsWithIds.put(R.id.ETPassword, 8);
+        sViewsWithIds.put(R.id.TvConfirmPassword, 9);
+        sViewsWithIds.put(R.id.ETConfirmPassword, 10);
+        sViewsWithIds.put(R.id.TvGender, 11);
+        sViewsWithIds.put(R.id.idRadioGroup, 12);
+        sViewsWithIds.put(R.id.maleRadio, 13);
+        sViewsWithIds.put(R.id.femaleRadio, 14);
+        sViewsWithIds.put(R.id.cb_terms, 15);
+        sViewsWithIds.put(R.id.bt_Signup, 16);
+        sViewsWithIds.put(R.id.tvSignin, 17);
     }
     // views
     @NonNull
@@ -36,22 +41,27 @@ public class ActivitySignupBindingImpl extends ActivitySignupBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySignupBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 18, sIncludes, sViewsWithIds));
     }
     private ActivitySignupBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.EditText) bindings[6]
-            , (android.widget.EditText) bindings[4]
+            , (android.widget.EditText) bindings[10]
+            , (android.widget.EditText) bindings[8]
             , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[7]
-            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[3]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[12]
-            , (android.widget.CheckBox) bindings[11]
-            , (android.widget.RadioButton) bindings[9]
-            , (android.widget.RadioButton) bindings[10]
-            , (android.widget.RadioGroup) bindings[8]
+            , (android.widget.TextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[16]
+            , (android.widget.CheckBox) bindings[15]
+            , (android.widget.EditText) bindings[6]
+            , (android.widget.EditText) bindings[2]
+            , (android.widget.EditText) bindings[4]
+            , (android.widget.RadioButton) bindings[14]
+            , (android.widget.RadioGroup) bindings[12]
+            , (android.widget.RadioButton) bindings[13]
+            , (android.widget.TextView) bindings[17]
             );
         this.mboundView0 = (androidx.core.widget.NestedScrollView) bindings[0];
         this.mboundView0.setTag(null);

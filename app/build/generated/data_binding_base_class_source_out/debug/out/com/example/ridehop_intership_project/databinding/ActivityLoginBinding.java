@@ -44,10 +44,13 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
   public final AppCompatButton btLogin;
 
+  @NonNull
+  public final EditText etEmail;
+
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       EditText ETPassword, LinearLayout LLSocialLogins, TextView TvEmail, TextView TvForgot,
       TextView TvPassword, TextView TvSignup, LinearLayout btFb, LinearLayout btGoogle,
-      AppCompatButton btLogin) {
+      AppCompatButton btLogin, EditText etEmail) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ETPassword = ETPassword;
     this.LLSocialLogins = LLSocialLogins;
@@ -58,6 +61,7 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
     this.btFb = btFb;
     this.btGoogle = btGoogle;
     this.btLogin = btLogin;
+    this.etEmail = etEmail;
   }
 
   @NonNull

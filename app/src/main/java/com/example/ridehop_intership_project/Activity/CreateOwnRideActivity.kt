@@ -1,10 +1,15 @@
 package com.example.ridehop_intership_project.Activity
 
 import android.app.Activity
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
@@ -19,15 +24,23 @@ import com.google.android.libraries.places.widget.AutocompleteActivity
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode
+import java.util.Calendar
 
 
 class CreateOwnRideActivity : AppCompatActivity() {
     //     lateinit var binding: ActivityCreateOwnRideBinding
     lateinit var From: EditText
     lateinit var To: EditText
+    lateinit var pickup: EditText
+    lateinit var dropoff: EditText
+    lateinit var dateTime: EditText
+
+
+
     var from= ""
     private val AUTOCOMPLETE_REQUEST_CODE = 1
     lateinit var bt_Login: AppCompatButton
+    lateinit var bt_back:ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,21 +49,54 @@ class CreateOwnRideActivity : AppCompatActivity() {
         From = findViewById(R.id.From_searchView)
         To= findViewById(R.id.to_search)
         bt_Login=findViewById(R.id.bt_Submit)
+        pickup=findViewById(R.id.et_pickup)
+        dropoff=findViewById(R.id.et_Dropoff)
+        dateTime=findViewById(R.id.etdate)
+        bt_back=findViewById(R.id.sideMenu)
+
         Places.initialize(applicationContext, "AIzaSyDZcBHRyr9ry2dVRcTTkQxlP1uANkVfvXE")
 
-        From.setOnClickListener {
+        pickup.setOnClickListener {
             from="from"
             startAutocompleteActivity()
         }
-//        To.setOnClickListener(View.OnClickListener {
-//             from="to"
-//            startAutocompleteActivity()
+        dropoff.setOnClickListener(View.OnClickListener {
+             from="to"
+            startAutocompleteActivity()
 //
-//        })
+        })
+        bt_back.setOnClickListener(View.OnClickListener {
+            onBackPressed()
+        })
         bt_Login.setOnClickListener(View.OnClickListener {
 //            startActivity(Intent(  this, MyRides::class.java))
 
         })
+
+        dateTime.setOnClickListener(View.OnClickListener {
+            val currentDate = Calendar.getInstance()
+            val  date = Calendar.getInstance()
+            DatePickerDialog(
+               this,
+                { view, year, monthOfYear, dayOfMonth ->
+                    date.set(year, monthOfYear, dayOfMonth)
+                    TimePickerDialog(
+                        this,
+                        { view, hourOfDay, minute ->
+                            date.set(Calendar.HOUR_OF_DAY, hourOfDay)
+                            date.set(Calendar.MINUTE, minute)
+                            Log.v(ContentValues.TAG, "The choosen one " + date.getTime())
+                           dateTime.setText(date.getTime().toString())
+                        },
+                        currentDate[Calendar.HOUR_OF_DAY],
+                        currentDate[Calendar.MINUTE], false
+                    ).show()
+                }, currentDate[Calendar.YEAR], currentDate[Calendar.MONTH],
+                currentDate[Calendar.DATE]
+            ).show()
+        })
+
+
 
 
 
@@ -109,12 +155,12 @@ class CreateOwnRideActivity : AppCompatActivity() {
                    Toast.makeText(this,placeAddress,Toast.LENGTH_SHORT).show()
                     if(from.equals("from"))
                     {
-                        From.setText(placeAddress)
+                        pickup.setText(placeAddress)
 
                     }
                     else if(from.equals("to"))
                     {
-                        To.setText(placeAddress)
+                        dropoff.setText(placeAddress)
 
                     }
                 }

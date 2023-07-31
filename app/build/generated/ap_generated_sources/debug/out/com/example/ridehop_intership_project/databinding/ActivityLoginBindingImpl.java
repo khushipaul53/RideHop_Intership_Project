@@ -15,14 +15,15 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.TvEmail, 1);
-        sViewsWithIds.put(R.id.TvPassword, 2);
-        sViewsWithIds.put(R.id.ETPassword, 3);
-        sViewsWithIds.put(R.id.bt_Login, 4);
-        sViewsWithIds.put(R.id.LL_SocialLogins, 5);
-        sViewsWithIds.put(R.id.btGoogle, 6);
-        sViewsWithIds.put(R.id.btFb, 7);
-        sViewsWithIds.put(R.id.TvForgot, 8);
-        sViewsWithIds.put(R.id.TvSignup, 9);
+        sViewsWithIds.put(R.id.et_email, 2);
+        sViewsWithIds.put(R.id.TvPassword, 3);
+        sViewsWithIds.put(R.id.ETPassword, 4);
+        sViewsWithIds.put(R.id.bt_Login, 5);
+        sViewsWithIds.put(R.id.LL_SocialLogins, 6);
+        sViewsWithIds.put(R.id.btGoogle, 7);
+        sViewsWithIds.put(R.id.btFb, 8);
+        sViewsWithIds.put(R.id.TvForgot, 9);
+        sViewsWithIds.put(R.id.TvSignup, 10);
     }
     // views
     @NonNull
@@ -33,19 +34,20 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityLoginBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
     }
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.EditText) bindings[3]
-            , (android.widget.LinearLayout) bindings[5]
-            , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.LinearLayout) bindings[7]
+            , (android.widget.EditText) bindings[4]
             , (android.widget.LinearLayout) bindings[6]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[4]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[3]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.LinearLayout) bindings[8]
+            , (android.widget.LinearLayout) bindings[7]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[5]
+            , (android.widget.EditText) bindings[2]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

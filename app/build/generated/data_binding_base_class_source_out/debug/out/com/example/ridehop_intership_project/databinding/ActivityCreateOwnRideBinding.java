@@ -45,6 +45,9 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final EditText etPickup;
 
   @NonNull
+  public final EditText etdate;
+
+  @NonNull
   public final TextView from;
 
   @NonNull
@@ -72,22 +75,22 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final TextView tvHeading;
 
   @NonNull
-  public final TextView tvRidesDetails;
-
-  @NonNull
   public final TextView tvSeats;
 
   @NonNull
   public final TextView tvdropOff;
 
+  @NonNull
+  public final TextView tvstops;
+
   private ActivityCreateOwnRideBinding(@NonNull LinearLayout rootView,
       @NonNull EditText FromSearchView, @NonNull AppBarLayout appbar,
       @NonNull AppCompatButton btSubmit, @NonNull TextView datetime, @NonNull EditText etDropoff,
-      @NonNull EditText etPickup, @NonNull TextView from, @NonNull RecyclerView listStops,
-      @NonNull TextView pickupFrom, @NonNull RelativeLayout rlLayout, @NonNull ImageButton sideMenu,
-      @NonNull TextView to, @NonNull EditText toSearch, @NonNull Toolbar toolbar,
-      @NonNull TextView tvHeading, @NonNull TextView tvRidesDetails, @NonNull TextView tvSeats,
-      @NonNull TextView tvdropOff) {
+      @NonNull EditText etPickup, @NonNull EditText etdate, @NonNull TextView from,
+      @NonNull RecyclerView listStops, @NonNull TextView pickupFrom,
+      @NonNull RelativeLayout rlLayout, @NonNull ImageButton sideMenu, @NonNull TextView to,
+      @NonNull EditText toSearch, @NonNull Toolbar toolbar, @NonNull TextView tvHeading,
+      @NonNull TextView tvSeats, @NonNull TextView tvdropOff, @NonNull TextView tvstops) {
     this.rootView = rootView;
     this.FromSearchView = FromSearchView;
     this.appbar = appbar;
@@ -95,6 +98,7 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
     this.datetime = datetime;
     this.etDropoff = etDropoff;
     this.etPickup = etPickup;
+    this.etdate = etdate;
     this.from = from;
     this.listStops = listStops;
     this.pickupFrom = pickupFrom;
@@ -104,9 +108,9 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
     this.toSearch = toSearch;
     this.toolbar = toolbar;
     this.tvHeading = tvHeading;
-    this.tvRidesDetails = tvRidesDetails;
     this.tvSeats = tvSeats;
     this.tvdropOff = tvdropOff;
+    this.tvstops = tvstops;
   }
 
   @Override
@@ -172,6 +176,12 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etdate;
+      EditText etdate = ViewBindings.findChildViewById(rootView, id);
+      if (etdate == null) {
+        break missingId;
+      }
+
       id = R.id.from;
       TextView from = ViewBindings.findChildViewById(rootView, id);
       if (from == null) {
@@ -226,12 +236,6 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvRidesDetails;
-      TextView tvRidesDetails = ViewBindings.findChildViewById(rootView, id);
-      if (tvRidesDetails == null) {
-        break missingId;
-      }
-
       id = R.id.tvSeats;
       TextView tvSeats = ViewBindings.findChildViewById(rootView, id);
       if (tvSeats == null) {
@@ -244,9 +248,15 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvstops;
+      TextView tvstops = ViewBindings.findChildViewById(rootView, id);
+      if (tvstops == null) {
+        break missingId;
+      }
+
       return new ActivityCreateOwnRideBinding((LinearLayout) rootView, FromSearchView, appbar,
-          btSubmit, datetime, etDropoff, etPickup, from, listStops, pickupFrom, rlLayout, sideMenu,
-          to, toSearch, toolbar, tvHeading, tvRidesDetails, tvSeats, tvdropOff);
+          btSubmit, datetime, etDropoff, etPickup, etdate, from, listStops, pickupFrom, rlLayout,
+          sideMenu, to, toSearch, toolbar, tvHeading, tvSeats, tvdropOff, tvstops);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

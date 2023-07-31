@@ -26,6 +26,9 @@ public abstract class ActivitySignupBinding extends ViewDataBinding {
   public final EditText ETPassword;
 
   @NonNull
+  public final TextView TvAge;
+
+  @NonNull
   public final TextView TvConfirmPassword;
 
   @NonNull
@@ -47,22 +50,35 @@ public abstract class ActivitySignupBinding extends ViewDataBinding {
   public final CheckBox cbTerms;
 
   @NonNull
-  public final RadioButton idBtnJavaRadio;
+  public final EditText etAge;
 
   @NonNull
-  public final RadioButton idBtnKotlinRadio;
+  public final EditText etEmail;
+
+  @NonNull
+  public final EditText etName;
+
+  @NonNull
+  public final RadioButton femaleRadio;
 
   @NonNull
   public final RadioGroup idRadioGroup;
 
+  @NonNull
+  public final RadioButton maleRadio;
+
+  @NonNull
+  public final TextView tvSignin;
+
   protected ActivitySignupBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      EditText ETConfirmPassword, EditText ETPassword, TextView TvConfirmPassword, TextView TvEmail,
-      TextView TvGender, TextView TvName, TextView TvPassword, AppCompatButton btSignup,
-      CheckBox cbTerms, RadioButton idBtnJavaRadio, RadioButton idBtnKotlinRadio,
-      RadioGroup idRadioGroup) {
+      EditText ETConfirmPassword, EditText ETPassword, TextView TvAge, TextView TvConfirmPassword,
+      TextView TvEmail, TextView TvGender, TextView TvName, TextView TvPassword,
+      AppCompatButton btSignup, CheckBox cbTerms, EditText etAge, EditText etEmail, EditText etName,
+      RadioButton femaleRadio, RadioGroup idRadioGroup, RadioButton maleRadio, TextView tvSignin) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ETConfirmPassword = ETConfirmPassword;
     this.ETPassword = ETPassword;
+    this.TvAge = TvAge;
     this.TvConfirmPassword = TvConfirmPassword;
     this.TvEmail = TvEmail;
     this.TvGender = TvGender;
@@ -70,9 +86,13 @@ public abstract class ActivitySignupBinding extends ViewDataBinding {
     this.TvPassword = TvPassword;
     this.btSignup = btSignup;
     this.cbTerms = cbTerms;
-    this.idBtnJavaRadio = idBtnJavaRadio;
-    this.idBtnKotlinRadio = idBtnKotlinRadio;
+    this.etAge = etAge;
+    this.etEmail = etEmail;
+    this.etName = etName;
+    this.femaleRadio = femaleRadio;
     this.idRadioGroup = idRadioGroup;
+    this.maleRadio = maleRadio;
+    this.tvSignin = tvSignin;
   }
 
   @NonNull

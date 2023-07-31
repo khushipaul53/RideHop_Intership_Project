@@ -64,6 +64,7 @@ id LLCarDetails
 id LLRides
 id LL_SocialLogins
 id SliderViewPager
+id TvAge
 id TvCartype
 id TvConfirmPassword
 id TvEmail
@@ -90,10 +91,16 @@ id cb_terms
 id dateTime
 id datetime
 id drawerlayout
+id etAge
+id etEmail
+id etName
 id et_Dropoff
 id et_datetime
+id et_email
 id et_pickup
+id etdate
 id fab
+id femaleRadio
 id fragment_myRides
 id fragment_profile
 id fragment_promocode
@@ -102,8 +109,6 @@ id fragment_setting
 id from
 id home
 id ic_back
-id idBtnJavaRadio
-id idBtnKotlinRadio
 id idIVImage
 id idRadioGroup
 id imageView
@@ -122,6 +127,7 @@ id ll_profile
 id ll_promocode
 id ll_rewards
 id logout
+id maleRadio
 id mobile_navigation
 id myRides
 id nav_home
@@ -160,8 +166,8 @@ id tvMessage
 id tvName
 id tvPhoneNumber
 id tvPrice
-id tvRidesDetails
 id tvSeats
+id tvSignin
 id tvVechicle
 id tv_heading
 id tvbooking
@@ -171,6 +177,7 @@ id tvdatentime
 id tvdropOff
 id tvfrom
 id tvpoints
+id tvstops
 id tvto
 id viewPager
 id viewPagerMain
@@ -211,6 +218,7 @@ layout rides_item
 menu nav_menu
 menu navigation
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 string action_settings

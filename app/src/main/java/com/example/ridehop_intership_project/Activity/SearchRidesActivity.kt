@@ -2,6 +2,7 @@ package com.example.ridehop_intership_project.Activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +19,9 @@ class SearchRidesActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this,R.layout.activity_search_rides)
-
+     binding!!.icBack.setOnClickListener(View.OnClickListener {
+         onBackPressed()
+     })
         binding!!.rvRides.layoutManager = LinearLayoutManager(this)
         val data = ArrayList<RideAvailable>()
         data.add(RideAvailable(R.drawable.user,"Carlos,Ward",2,"$10"))
