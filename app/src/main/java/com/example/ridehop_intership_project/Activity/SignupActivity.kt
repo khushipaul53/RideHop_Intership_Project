@@ -17,6 +17,7 @@ import com.facebook.CallbackManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.math.sign
 
 class SignupActivity : AppCompatActivity() {
     var binding:ActivitySignupBinding?=null
@@ -79,11 +80,13 @@ class SignupActivity : AppCompatActivity() {
                 {
                     Toast.makeText(this@SignupActivity,response.body()!!.message,Toast.LENGTH_SHORT).show()
 
-//                    var login = Intent(this@LoginActivity,DashboardActivity::class.java)
-//
-//                    login.putExtra("token",response.body()!!.token)
-//                    login.putExtra("login",true)
-//                    startActivity(login)
+                    var signup = Intent(this@SignupActivity,DashboardActivity::class.java)
+
+                    signup.putExtra("data",response.body()!!.user)
+                    signup.putExtra("token",response.body()!!.token)
+                    signup.putExtra("login",true)
+                    signup.putExtra("firstTimeSignup",true)
+                    startActivity(signup)
                 }
 
 
@@ -146,3 +149,4 @@ class SignupActivity : AppCompatActivity() {
 
     }
 }
+

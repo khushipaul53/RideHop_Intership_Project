@@ -22,7 +22,6 @@ import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.databinding.FragmentDashboardBinding
 import java.util.Calendar
 import java.util.Timer
-import java.util.TimerTask
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -58,6 +57,15 @@ class DashboardFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_dashboard,view,false)
 
+        // Attach the Fragment to the Activity
+
+        // Attach the Fragment to the Activity
+
+//        supportFragmentManager.beginTransaction()
+//            .replace(R.id.fragment_profile, fragment, fragment.getFragmentTag())
+//            .commit()
+//        val extras = Bundle()
+//        extras.putString("fragment_tag", fragment.getFragmentTag())
 
         binding.sideMenu.setOnClickListener(View.OnClickListener {
             (activity as DashboardActivity).openSideMenu()
@@ -97,17 +105,21 @@ class DashboardFragment : Fragment() {
         val timer = Timer()
 
         binding!!.btLogin.setOnClickListener(View.OnClickListener {
-            var b=Bundle()
-//            b.putString("from",)
-//            b.putString("to",)
-//            b.putString("seats")
 
-            startActivity(Intent(activity as DashboardActivity, SearchRidesActivity::class.java))
+
+           var intent= Intent(activity as DashboardActivity, SearchRidesActivity::class.java)
+            intent.putExtra("from",binding!!.etFrom.text.toString())
+            intent.putExtra("to",binding!!.etTo.text.toString())
+            intent.putExtra("seats",binding!!.spType.selectedItem.toString())
+            startActivity(intent)
 
         })
 
         binding!!.fab.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(activity as DashboardActivity, CreateOwnRideActivity::class.java))
+          var intent=  Intent(activity as DashboardActivity, CreateOwnRideActivity::class.java)
+//          intent.putExtra("tokken""")
+            startActivity(intent)
+
 
         })
 
@@ -138,6 +150,7 @@ class DashboardFragment : Fragment() {
         return binding.root
 
     }
+
     
 
 }

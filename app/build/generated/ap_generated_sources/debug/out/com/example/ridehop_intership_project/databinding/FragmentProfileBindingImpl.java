@@ -23,8 +23,10 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
         sViewsWithIds.put(R.id.TvName, 7);
         sViewsWithIds.put(R.id.TvEmail, 8);
         sViewsWithIds.put(R.id.TvPhone, 9);
-        sViewsWithIds.put(R.id.TvCartype, 10);
-        sViewsWithIds.put(R.id.bt_Edit, 11);
+        sViewsWithIds.put(R.id.et_phone, 10);
+        sViewsWithIds.put(R.id.TvCartype, 11);
+        sViewsWithIds.put(R.id.vehicledetails, 12);
+        sViewsWithIds.put(R.id.bt_Edit, 13);
     }
     // views
     // variables
@@ -33,22 +35,24 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
     }
     private FragmentProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[9]
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[11]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[13]
+            , (android.widget.EditText) bindings[10]
             , (android.widget.ImageButton) bindings[3]
             , (android.widget.ImageView) bindings[6]
             , (android.widget.ImageView) bindings[5]
             , (android.widget.RelativeLayout) bindings[0]
             , (androidx.appcompat.widget.Toolbar) bindings[2]
             , (android.widget.TextView) bindings[4]
+            , (android.widget.EditText) bindings[12]
             );
         this.rlLayout.setTag(null);
         setRootTag(root);

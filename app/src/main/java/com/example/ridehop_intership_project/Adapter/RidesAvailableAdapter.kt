@@ -12,14 +12,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ridehop_intership_project.Activity.SearchRidesActivity
 import com.example.ridehop_intership_project.Model.RideAvailable
 import com.example.ridehop_intership_project.R
+import com.example.ridehop_intership_project.Response.FindRideResponse
 
 class RidesAvailableAdapter(
-    private val mList: ArrayList<RideAvailable>,
+    private val mList: ArrayList<FindRideResponse>,
     searchRidesActivity: SearchRidesActivity
 ) : RecyclerView.Adapter<RidesAvailableAdapter.ViewHolder>() {
 
     var context=searchRidesActivity
     // create new views
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
@@ -35,16 +37,20 @@ class RidesAvailableAdapter(
 //        val ItemsViewModel = mList[position]
 
         // sets the image to the imageview from our itemHolder class
-       var Img=holder.imageView.setImageResource(mList[position].Image)
-     var Name=holder.textView.setText(mList[position].Name)
-        holder.rating.numStars=mList[position].Rating
-        var rating= mList[position].Rating
-        var price=holder.price.setText(mList[position].Price+"(PER SEAT)")
+//       var Img=holder.imageView.setImageResource(mList[position].Image)
+     var Name=holder.textView.setText("Date: "+mList[position].dateTime)
+//        holder.rating.numStars=mList[position].Rating
+//        var rating= mList[position].Rating
+        var price=holder.price.setText("Price: $"+mList[position].price.toString()+"(PER SEAT)")
+         var bookingId=holder.booking_Id.setText("Booking Id:"+ mList[position].bookingId.toString())
+         holder.tvfrom.setText(mList[position].from)
+        holder.tvto.setText(mList[position].to)
+
 //        // sets the text to the textview from our itemHolder class
 //        holder.textView.text = ItemsViewModel.text
         holder.LLRides.setOnClickListener(View.OnClickListener {
 
-            context.open(Img.toString(),Name.toString(),rating, price.toString())
+            context.open(bookingId.toString(),Name.toString(), price.toString())
         })
 
     }
@@ -58,10 +64,12 @@ class RidesAvailableAdapter(
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         var LLRides:LinearLayout=itemView.findViewById(R.id.LLRides)
-        val imageView: ImageView = itemView.findViewById(R.id.imageview)
-        val textView: TextView = itemView.findViewById(R.id.textView)
+        var booking_Id: TextView = itemView.findViewById(R.id.bookingId)
+        var textView: TextView = itemView.findViewById(R.id.textView)
         var price:TextView=itemView.findViewById(R.id.tvPrice)
-        val rating:RatingBar=itemView.findViewById(R.id.rating)
+        var tvfrom:TextView=itemView.findViewById(R.id.tvfrom)
+        var tvto:TextView=itemView.findViewById(R.id.tvto)
+
     }
 
 

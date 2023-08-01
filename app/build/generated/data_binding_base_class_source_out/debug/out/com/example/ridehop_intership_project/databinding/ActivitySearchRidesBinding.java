@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.ridehop_intership_project.R;
 import com.google.android.material.appbar.AppBarLayout;
 import java.lang.Deprecated;
@@ -32,6 +33,9 @@ public abstract class ActivitySearchRidesBinding extends ViewDataBinding {
   public final RecyclerView rvRides;
 
   @NonNull
+  public final SwipeRefreshLayout swiperefresh;
+
+  @NonNull
   public final Toolbar toolbar;
 
   @NonNull
@@ -39,12 +43,13 @@ public abstract class ActivitySearchRidesBinding extends ViewDataBinding {
 
   protected ActivitySearchRidesBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppBarLayout appbar, ImageButton icBack, RelativeLayout rlLayout, RecyclerView rvRides,
-      Toolbar toolbar, TextView tvHeading) {
+      SwipeRefreshLayout swiperefresh, Toolbar toolbar, TextView tvHeading) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appbar = appbar;
     this.icBack = icBack;
     this.rlLayout = rlLayout;
     this.rvRides = rvRides;
+    this.swiperefresh = swiperefresh;
     this.toolbar = toolbar;
     this.tvHeading = tvHeading;
   }

@@ -37,6 +37,12 @@ public abstract class FragmentDashboardBinding extends ViewDataBinding {
   public final EditText etDatetime;
 
   @NonNull
+  public final EditText etFrom;
+
+  @NonNull
+  public final EditText etTo;
+
+  @NonNull
   public final FloatingActionButton fab;
 
   @NonNull
@@ -71,14 +77,16 @@ public abstract class FragmentDashboardBinding extends ViewDataBinding {
 
   protected FragmentDashboardBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppBarLayout appbar, AppCompatButton btLogin, TextView dateTime, EditText etDatetime,
-      FloatingActionButton fab, TextView from, LinearLayout llCustom, RelativeLayout rlLayout,
-      ImageButton sideMenu, Spinner spType, TextView to, Toolbar toolbar, TextView tvHeading,
-      TextView tvSeats, ViewPager viewPagerMain) {
+      EditText etFrom, EditText etTo, FloatingActionButton fab, TextView from,
+      LinearLayout llCustom, RelativeLayout rlLayout, ImageButton sideMenu, Spinner spType,
+      TextView to, Toolbar toolbar, TextView tvHeading, TextView tvSeats, ViewPager viewPagerMain) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appbar = appbar;
     this.btLogin = btLogin;
     this.dateTime = dateTime;
     this.etDatetime = etDatetime;
+    this.etFrom = etFrom;
+    this.etTo = etTo;
     this.fab = fab;
     this.from = from;
     this.llCustom = llCustom;

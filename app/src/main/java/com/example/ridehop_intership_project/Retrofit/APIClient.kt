@@ -15,6 +15,10 @@ object APIClient {
             val interceptor = HttpLoggingInterceptor()
             interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
             val client: OkHttpClient = OkHttpClient.Builder().addInterceptor(interceptor).build()
+
+
+
+
             retrofit = Retrofit.Builder()
                 .baseUrl("https://internship-project-r2vd.onrender.com")
                 .addConverterFactory(GsonConverterFactory.create())

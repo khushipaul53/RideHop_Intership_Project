@@ -4,6 +4,7 @@ package com.example.ridehop_intership_project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -39,6 +40,9 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final AppCompatButton btEdit;
 
   @NonNull
+  public final EditText etPhone;
+
+  @NonNull
   public final ImageButton icBack;
 
   @NonNull
@@ -56,10 +60,14 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvHeading;
 
+  @NonNull
+  public final EditText vehicledetails;
+
   protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView TvCartype, TextView TvEmail, TextView TvName, TextView TvPhone, AppBarLayout appbar,
-      AppCompatButton btEdit, ImageButton icBack, ImageView ivEditPic, ImageView ivProfilePic,
-      RelativeLayout rlLayout, Toolbar toolbar, TextView tvHeading) {
+      AppCompatButton btEdit, EditText etPhone, ImageButton icBack, ImageView ivEditPic,
+      ImageView ivProfilePic, RelativeLayout rlLayout, Toolbar toolbar, TextView tvHeading,
+      EditText vehicledetails) {
     super(_bindingComponent, _root, _localFieldCount);
     this.TvCartype = TvCartype;
     this.TvEmail = TvEmail;
@@ -67,12 +75,14 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
     this.TvPhone = TvPhone;
     this.appbar = appbar;
     this.btEdit = btEdit;
+    this.etPhone = etPhone;
     this.icBack = icBack;
     this.ivEditPic = ivEditPic;
     this.ivProfilePic = ivProfilePic;
     this.rlLayout = rlLayout;
     this.toolbar = toolbar;
     this.tvHeading = tvHeading;
+    this.vehicledetails = vehicledetails;
   }
 
   @NonNull

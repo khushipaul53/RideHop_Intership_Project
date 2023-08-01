@@ -1104,6 +1104,7 @@ attr suffixText
 attr suffixTextAppearance
 attr suffixTextColor
 attr suggestionRowLayout
+attr swipeRefreshLayoutProgressSpinnerBackgroundColor
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -3403,6 +3404,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bookingId
 id bottom
 id bounce
 id bounceBoth
@@ -3526,12 +3528,17 @@ id enterAlways
 id enterAlwaysCollapsed
 id etAge
 id etEmail
+id etFrom
 id etName
 id et_Dropoff
 id et_datetime
 id et_email
+id et_phone
 id et_pickup
+id et_to
 id etdate
+id etprice
+id etseats
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3860,6 +3867,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swiperefresh
 id tabMode
 id tabs
 id tag_accessibility_actions
@@ -3936,7 +3944,7 @@ id tvdatentime
 id tvdropOff
 id tvfrom
 id tvpoints
-id tvstops
+id tvprice
 id tvto
 id unchecked
 id uniform
@@ -3944,6 +3952,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id vehicledetails
 id vertical_only
 id viewPager
 id viewPagerMain
@@ -5678,6 +5687,7 @@ styleable State android_id constraints
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
 styleable StateSet defaultState
+styleable SwipeRefreshLayout swipeRefreshLayoutProgressSpinnerBackgroundColor
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text

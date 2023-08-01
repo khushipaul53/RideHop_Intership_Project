@@ -18,7 +18,8 @@ public class ActivitySearchRidesBindingImpl extends ActivitySearchRidesBinding  
         sViewsWithIds.put(R.id.toolbar, 2);
         sViewsWithIds.put(R.id.ic_back, 3);
         sViewsWithIds.put(R.id.tv_heading, 4);
-        sViewsWithIds.put(R.id.rvRides, 5);
+        sViewsWithIds.put(R.id.swiperefresh, 5);
+        sViewsWithIds.put(R.id.rvRides, 6);
     }
     // views
     // variables
@@ -27,14 +28,15 @@ public class ActivitySearchRidesBindingImpl extends ActivitySearchRidesBinding  
     // Inverse Binding Event Handlers
 
     public ActivitySearchRidesBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivitySearchRidesBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
             , (android.widget.ImageButton) bindings[3]
             , (android.widget.RelativeLayout) bindings[0]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[6]
+            , (androidx.swiperefreshlayout.widget.SwipeRefreshLayout) bindings[5]
             , (androidx.appcompat.widget.Toolbar) bindings[2]
             , (android.widget.TextView) bindings[4]
             );

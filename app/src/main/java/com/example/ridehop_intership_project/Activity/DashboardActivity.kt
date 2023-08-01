@@ -7,14 +7,16 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.ridehop_intership_project.Fragment.ProfileFragment
 import com.example.ridehop_intership_project.R
+import com.example.ridehop_intership_project.Response.SignupResponse
 import com.example.ridehop_intership_project.databinding.ActivityDashboardBinding
 import com.google.android.material.navigation.NavigationView
+import java.io.Serializable
 
 
 class DashboardActivity : AppCompatActivity() {
@@ -22,23 +24,43 @@ class DashboardActivity : AppCompatActivity() {
     lateinit var sharedPreferences :SharedPreferences
 
     lateinit var myEdit : SharedPreferences.Editor
+    lateinit var data:Serializable
 var token=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding=DataBindingUtil.setContentView(this, R.layout.activity_dashboard)
+        binding=DataBindingUtil.setContentView(this, com.example.ridehop_intership_project.R.layout.activity_dashboard)
+
+
+        // Attach the Fragment to the Activity
+
+        // Attach the Fragment to the Activity
+
+
+        // Save the Fragment tag in the Bundle (if needed for future reference)
+
+        // Save the Fragment tag in the Bundle (if needed for future reference)
+
 //        FirebaseApp.initializeApp(this)
 //        var value = getIntent().getExtras()!!.getString("token")
         sharedPreferences=  this.getSharedPreferences("MySharedPref", MODE_PRIVATE)
         myEdit = sharedPreferences.edit()
-if(getIntent().getExtras()!!.getBoolean("login") )
+if(getIntent().getExtras()!!.getBoolean("login"))
 {
-     token =getIntent().getExtras()!!.getString("token")!!
+     token=getIntent().getExtras()!!.getString("token")!!
         Log.d("dkvmfmd", "" + token)
     myEdit.putString("tokken", token);
     myEdit.commit();
 }
+
+        if(intent!=null)
+        {
+        var data= intent.getSerializableExtra("data")
+        Log.d("bvb",""+data)
+        }
+
+
 
 
 
@@ -69,7 +91,9 @@ if(getIntent().getExtras()!!.getBoolean("login") )
 
                 }
                 R.id.profile -> {
-                    navController.navigate(R.id.fragment_profile)
+                    val args = Bundle()
+                       args.putSerializable("data",data)
+                    navController.navigate(R.id.fragment_profile,args)
 
                 }
                 R.id.promocode -> {
@@ -121,6 +145,24 @@ if(getIntent().getExtras()!!.getBoolean("login") )
 
 
 
+
+    }
+
+    private fun editProfile() {
+        AlertDialog.Builder(this)
+            .setTitle("Please!!")
+            .setMessage("Do fill your profile to offer a Ride")
+            .setIcon(android.R.drawable.ic_dialog_alert)
+            .setPositiveButton("Okay",
+                DialogInterface.OnClickListener { dialog, whichButton ->
+                    val navController = findNavController(com.example.ridehop_intership_project.R.id.nav_host_fragment_content_navigation)
+
+                    navController.navigate(R.id.profile)
+                })
+            .setNegativeButton("May be After!!", DialogInterface.OnClickListener{
+                    dialog, whichButton ->
+                dialog.dismiss()
+            }).show()
 
     }
 

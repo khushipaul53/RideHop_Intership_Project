@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.ridehop_intership_project.R
+import com.example.ridehop_intership_project.Response.SignupResponse
 import com.example.ridehop_intership_project.databinding.FragmentProfileBinding
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,6 +29,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class ProfileFragment : Fragment() {
     lateinit var binding:FragmentProfileBinding
+    private val FRAGMENT_TAG = "your_fragment_tag"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,10 +40,16 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, view: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_profile,view,false)
+        binding = DataBindingUtil.inflate(inflater,
+          R.layout.fragment_profile,view,false)
         binding!!.icBack.setOnClickListener(View.OnClickListener { // Call finish() to close the current activity and go back to the previous screen
             activity?.supportFragmentManager?.popBackStack()
         })
+
+        var data= requireArguments().getSerializable("data")
+
+        Log.d("sncn",""+data)
+
 
         binding!!.tvHeading.setText("Profile")
         // Inflate the layout for this fragment
@@ -50,11 +60,37 @@ class ProfileFragment : Fragment() {
         return binding!!.root
     }
 
+
+    // You can use this method to set the unique identifier (tag) for the Fragment
+
+
     private fun pickPhoto() {
 
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
         // starting activity on below line.
         startActivityForResult(intent, 1)
+
+    }
+
+
+    // You can use this method to set the unique identifier (tag) for the Fragment
+
+
+    public fun isEditTextFilled(): Boolean {
+        val phoneNumber=binding!!.etPhone.text.toString()
+        val vehicleDetails=binding!!.vehicledetails.text.toString()
+
+        if(phoneNumber.toString().isEmpty())
+        {
+            return false;
+        }
+        else if(vehicleDetails.toString().isEmpty())
+
+        {
+            return false;
+        }
+        return true;
+           // Replace 'R.id.editText' with the actual ID of your EditText
 
     }
 

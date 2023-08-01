@@ -48,6 +48,12 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final EditText etdate;
 
   @NonNull
+  public final EditText etprice;
+
+  @NonNull
+  public final EditText etseats;
+
+  @NonNull
   public final TextView from;
 
   @NonNull
@@ -81,16 +87,17 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
   public final TextView tvdropOff;
 
   @NonNull
-  public final TextView tvstops;
+  public final TextView tvprice;
 
   private ActivityCreateOwnRideBinding(@NonNull LinearLayout rootView,
       @NonNull EditText FromSearchView, @NonNull AppBarLayout appbar,
       @NonNull AppCompatButton btSubmit, @NonNull TextView datetime, @NonNull EditText etDropoff,
-      @NonNull EditText etPickup, @NonNull EditText etdate, @NonNull TextView from,
-      @NonNull RecyclerView listStops, @NonNull TextView pickupFrom,
-      @NonNull RelativeLayout rlLayout, @NonNull ImageButton sideMenu, @NonNull TextView to,
-      @NonNull EditText toSearch, @NonNull Toolbar toolbar, @NonNull TextView tvHeading,
-      @NonNull TextView tvSeats, @NonNull TextView tvdropOff, @NonNull TextView tvstops) {
+      @NonNull EditText etPickup, @NonNull EditText etdate, @NonNull EditText etprice,
+      @NonNull EditText etseats, @NonNull TextView from, @NonNull RecyclerView listStops,
+      @NonNull TextView pickupFrom, @NonNull RelativeLayout rlLayout, @NonNull ImageButton sideMenu,
+      @NonNull TextView to, @NonNull EditText toSearch, @NonNull Toolbar toolbar,
+      @NonNull TextView tvHeading, @NonNull TextView tvSeats, @NonNull TextView tvdropOff,
+      @NonNull TextView tvprice) {
     this.rootView = rootView;
     this.FromSearchView = FromSearchView;
     this.appbar = appbar;
@@ -99,6 +106,8 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
     this.etDropoff = etDropoff;
     this.etPickup = etPickup;
     this.etdate = etdate;
+    this.etprice = etprice;
+    this.etseats = etseats;
     this.from = from;
     this.listStops = listStops;
     this.pickupFrom = pickupFrom;
@@ -110,7 +119,7 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
     this.tvHeading = tvHeading;
     this.tvSeats = tvSeats;
     this.tvdropOff = tvdropOff;
-    this.tvstops = tvstops;
+    this.tvprice = tvprice;
   }
 
   @Override
@@ -182,6 +191,18 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etprice;
+      EditText etprice = ViewBindings.findChildViewById(rootView, id);
+      if (etprice == null) {
+        break missingId;
+      }
+
+      id = R.id.etseats;
+      EditText etseats = ViewBindings.findChildViewById(rootView, id);
+      if (etseats == null) {
+        break missingId;
+      }
+
       id = R.id.from;
       TextView from = ViewBindings.findChildViewById(rootView, id);
       if (from == null) {
@@ -248,15 +269,16 @@ public final class ActivityCreateOwnRideBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvstops;
-      TextView tvstops = ViewBindings.findChildViewById(rootView, id);
-      if (tvstops == null) {
+      id = R.id.tvprice;
+      TextView tvprice = ViewBindings.findChildViewById(rootView, id);
+      if (tvprice == null) {
         break missingId;
       }
 
       return new ActivityCreateOwnRideBinding((LinearLayout) rootView, FromSearchView, appbar,
-          btSubmit, datetime, etDropoff, etPickup, etdate, from, listStops, pickupFrom, rlLayout,
-          sideMenu, to, toSearch, toolbar, tvHeading, tvSeats, tvdropOff, tvstops);
+          btSubmit, datetime, etDropoff, etPickup, etdate, etprice, etseats, from, listStops,
+          pickupFrom, rlLayout, sideMenu, to, toSearch, toolbar, tvHeading, tvSeats, tvdropOff,
+          tvprice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

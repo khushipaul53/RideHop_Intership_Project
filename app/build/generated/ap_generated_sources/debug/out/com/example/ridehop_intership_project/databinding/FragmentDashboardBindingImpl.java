@@ -20,14 +20,16 @@ public class FragmentDashboardBindingImpl extends FragmentDashboardBinding  {
         sViewsWithIds.put(R.id.tv_heading, 4);
         sViewsWithIds.put(R.id.viewPagerMain, 5);
         sViewsWithIds.put(R.id.from, 6);
-        sViewsWithIds.put(R.id.to, 7);
-        sViewsWithIds.put(R.id.llCustom, 8);
-        sViewsWithIds.put(R.id.dateTime, 9);
-        sViewsWithIds.put(R.id.et_datetime, 10);
-        sViewsWithIds.put(R.id.tvSeats, 11);
-        sViewsWithIds.put(R.id.spType, 12);
-        sViewsWithIds.put(R.id.bt_Login, 13);
-        sViewsWithIds.put(R.id.fab, 14);
+        sViewsWithIds.put(R.id.etFrom, 7);
+        sViewsWithIds.put(R.id.to, 8);
+        sViewsWithIds.put(R.id.et_to, 9);
+        sViewsWithIds.put(R.id.llCustom, 10);
+        sViewsWithIds.put(R.id.dateTime, 11);
+        sViewsWithIds.put(R.id.et_datetime, 12);
+        sViewsWithIds.put(R.id.tvSeats, 13);
+        sViewsWithIds.put(R.id.spType, 14);
+        sViewsWithIds.put(R.id.bt_Login, 15);
+        sViewsWithIds.put(R.id.fab, 16);
     }
     // views
     // variables
@@ -36,24 +38,26 @@ public class FragmentDashboardBindingImpl extends FragmentDashboardBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentDashboardBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 17, sIncludes, sViewsWithIds));
     }
     private FragmentDashboardBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (androidx.appcompat.widget.AppCompatButton) bindings[13]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.EditText) bindings[10]
-            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[14]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[15]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.EditText) bindings[12]
+            , (android.widget.EditText) bindings[7]
+            , (android.widget.EditText) bindings[9]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[16]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.LinearLayout) bindings[8]
+            , (android.widget.LinearLayout) bindings[10]
             , (android.widget.RelativeLayout) bindings[0]
             , (android.widget.ImageButton) bindings[3]
-            , (android.widget.Spinner) bindings[12]
-            , (android.widget.TextView) bindings[7]
+            , (android.widget.Spinner) bindings[14]
+            , (android.widget.TextView) bindings[8]
             , (androidx.appcompat.widget.Toolbar) bindings[2]
             , (android.widget.TextView) bindings[4]
-            , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[13]
             , (androidx.viewpager.widget.ViewPager) bindings[5]
             );
         this.rlLayout.setTag(null);

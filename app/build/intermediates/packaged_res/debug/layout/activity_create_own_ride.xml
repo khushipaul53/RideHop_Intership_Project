@@ -256,6 +256,7 @@
                     </TextView>
 
                     <EditText
+                        android:id="@+id/etseats"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:textColorHighlight="@color/white"
@@ -277,11 +278,11 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tvstops"
+                        android:id="@+id/tvprice"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="Details: "
+                        android:text="Price: "
                         android:layout_weight=".3"
                         android:textColor="@color/SecondaryColor"
                         android:textSize="20dp"
@@ -290,6 +291,7 @@
                     </TextView>
 
                     <EditText
+                        android:id="@+id/etprice"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:textColorHighlight="@color/white"

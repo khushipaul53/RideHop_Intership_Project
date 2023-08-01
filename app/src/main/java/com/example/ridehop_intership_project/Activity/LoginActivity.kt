@@ -135,7 +135,7 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-                    Toast.makeText(this@LoginActivity,response.body()!!.message,Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity,"Login Successfull",Toast.LENGTH_SHORT).show()
 
                     var login = Intent(this@LoginActivity,DashboardActivity::class.java)
 

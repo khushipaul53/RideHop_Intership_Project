@@ -4,9 +4,7 @@ package com.example.ridehop_intership_project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,10 +24,7 @@ public final class RidesItemBinding implements ViewBinding {
   public final LinearLayout LLRides;
 
   @NonNull
-  public final ImageView imageview;
-
-  @NonNull
-  public final RatingBar rating;
+  public final TextView bookingId;
 
   @NonNull
   public final TextView textView;
@@ -37,15 +32,22 @@ public final class RidesItemBinding implements ViewBinding {
   @NonNull
   public final TextView tvPrice;
 
+  @NonNull
+  public final TextView tvfrom;
+
+  @NonNull
+  public final TextView tvto;
+
   private RidesItemBinding(@NonNull CardView rootView, @NonNull LinearLayout LLRides,
-      @NonNull ImageView imageview, @NonNull RatingBar rating, @NonNull TextView textView,
-      @NonNull TextView tvPrice) {
+      @NonNull TextView bookingId, @NonNull TextView textView, @NonNull TextView tvPrice,
+      @NonNull TextView tvfrom, @NonNull TextView tvto) {
     this.rootView = rootView;
     this.LLRides = LLRides;
-    this.imageview = imageview;
-    this.rating = rating;
+    this.bookingId = bookingId;
     this.textView = textView;
     this.tvPrice = tvPrice;
+    this.tvfrom = tvfrom;
+    this.tvto = tvto;
   }
 
   @Override
@@ -81,15 +83,9 @@ public final class RidesItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageview;
-      ImageView imageview = ViewBindings.findChildViewById(rootView, id);
-      if (imageview == null) {
-        break missingId;
-      }
-
-      id = R.id.rating;
-      RatingBar rating = ViewBindings.findChildViewById(rootView, id);
-      if (rating == null) {
+      id = R.id.bookingId;
+      TextView bookingId = ViewBindings.findChildViewById(rootView, id);
+      if (bookingId == null) {
         break missingId;
       }
 
@@ -105,8 +101,20 @@ public final class RidesItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RidesItemBinding((CardView) rootView, LLRides, imageview, rating, textView,
-          tvPrice);
+      id = R.id.tvfrom;
+      TextView tvfrom = ViewBindings.findChildViewById(rootView, id);
+      if (tvfrom == null) {
+        break missingId;
+      }
+
+      id = R.id.tvto;
+      TextView tvto = ViewBindings.findChildViewById(rootView, id);
+      if (tvto == null) {
+        break missingId;
+      }
+
+      return new RidesItemBinding((CardView) rootView, LLRides, bookingId, textView, tvPrice,
+          tvfrom, tvto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
