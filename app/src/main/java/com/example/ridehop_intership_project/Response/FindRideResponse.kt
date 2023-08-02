@@ -1,5 +1,8 @@
 package com.example.ridehop_intership_project.Response
 
+import com.example.ridehop_intership_project.Model.BookedUser
+import java.io.Serializable
+
 class FindRideResponse (
     var _id: String,
     var  from:String,
@@ -11,8 +14,9 @@ class FindRideResponse (
     var  price:Int,
     var bookingId:Int,
     var user:User,
-    var__v:Int
-   )
+    var__v:Int,
+var bookingUsers:ArrayList<BookedUser>
+   ):Serializable
 
 
 

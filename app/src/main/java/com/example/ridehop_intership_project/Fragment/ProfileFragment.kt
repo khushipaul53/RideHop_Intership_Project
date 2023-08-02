@@ -9,9 +9,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.ridehop_intership_project.Activity.DashboardActivity
 import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.Response.SignupResponse
 import com.example.ridehop_intership_project.databinding.FragmentProfileBinding
@@ -46,9 +48,9 @@ class ProfileFragment : Fragment() {
             activity?.supportFragmentManager?.popBackStack()
         })
 
-        var data= requireArguments().getSerializable("data")
+//        var data= requireArguments().getSerializable("data")
 
-        Log.d("sncn",""+data)
+//        Log.d("sncn",""+data)
 
 
         binding!!.tvHeading.setText("Profile")
@@ -57,8 +59,17 @@ class ProfileFragment : Fragment() {
           pickPhoto()
 
       })
+
+        binding!!.btEdit.setOnClickListener(View.OnClickListener {
+            Toast.makeText(activity as DashboardActivity,"Profile Updated", Toast.LENGTH_SHORT).show()
+            activity?.supportFragmentManager?.popBackStack()
+
+
+
+        })
         return binding!!.root
     }
+
 
 
     // You can use this method to set the unique identifier (tag) for the Fragment

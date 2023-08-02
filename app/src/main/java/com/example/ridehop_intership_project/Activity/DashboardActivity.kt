@@ -7,6 +7,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
@@ -26,6 +28,8 @@ class DashboardActivity : AppCompatActivity() {
     lateinit var myEdit : SharedPreferences.Editor
     lateinit var data:Serializable
 var token=""
+    var name=""
+    var email=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +52,8 @@ var token=""
         myEdit = sharedPreferences.edit()
 if(getIntent().getExtras()!!.getBoolean("login"))
 {
-     token=getIntent().getExtras()!!.getString("token")!!
+
+    token=getIntent().getExtras()!!.getString("token")!!
         Log.d("dkvmfmd", "" + token)
     myEdit.putString("tokken", token);
     myEdit.commit();
@@ -59,11 +64,6 @@ if(getIntent().getExtras()!!.getBoolean("login"))
         var data= intent.getSerializableExtra("data")
         Log.d("bvb",""+data)
         }
-
-
-
-
-
 
 
 //        FirebaseMessaging.getInstance().token.addOnCompleteListener {
@@ -80,8 +80,16 @@ if(getIntent().getExtras()!!.getBoolean("login"))
 //        val fragmentManager = supportFragmentManager
 //        val fragmentTransaction = fragmentManager.beginTransaction()
 //        fragmentTransaction.replace(R.id.nav_home, DashboardFragment()).commit()
-//        navView.inflateHeaderView(R.layout.nav_header)
+        navView.inflateHeaderView(R.layout.nav_header)
+        var headerView: View =navView.getHeaderView(0)
+
+
+        var headerName: TextView =headerView.findViewById<TextView>(R.id.tvheadername)
+        var headerEmail:TextView=headerView.findViewById<TextView>(R.id.tvheaderemail)
+
+
 //        navView.inflateMenu(R.menu.nav_menu)
+
 
 //        navView.setupWithNavController(navController)
         navView.setNavigationItemSelectedListener { menuItem ->
@@ -91,9 +99,8 @@ if(getIntent().getExtras()!!.getBoolean("login"))
 
                 }
                 R.id.profile -> {
-                    val args = Bundle()
-                       args.putSerializable("data",data)
-                    navController.navigate(R.id.fragment_profile,args)
+
+                    navController.navigate(R.id.fragment_profile)
 
                 }
                 R.id.promocode -> {
@@ -101,7 +108,7 @@ if(getIntent().getExtras()!!.getBoolean("login"))
                 }
 
                 R.id.setting -> {
-                    navController.navigate(R.id.fragment_setting)
+//                    navController.navigate(R.id.fragment_setting)
                 }
                 R.id.rewards -> {
                     navController.navigate(R.id.fragment_rewards)

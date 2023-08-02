@@ -2,17 +2,14 @@ package com.example.ridehop_intership_project.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ridehop_intership_project.Activity.SearchRidesActivity
-import com.example.ridehop_intership_project.Model.RideAvailable
 import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.Response.FindRideResponse
+import java.io.Serializable
 
 class RidesAvailableAdapter(
     private val mList: ArrayList<FindRideResponse>,
@@ -50,7 +47,7 @@ class RidesAvailableAdapter(
 //        holder.textView.text = ItemsViewModel.text
         holder.LLRides.setOnClickListener(View.OnClickListener {
 
-            context.open(bookingId.toString(),Name.toString(), price.toString())
+            context.open(mList[position])
         })
 
     }

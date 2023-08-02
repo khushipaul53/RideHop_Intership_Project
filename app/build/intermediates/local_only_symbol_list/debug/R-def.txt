@@ -89,8 +89,11 @@ id bt_Submit
 id bt_book
 id btcalling
 id cb_terms
+id customer
 id dateTime
 id datetime
+id dialogButton
+id dialogTitle
 id drawerlayout
 id etAge
 id etEmail
@@ -151,6 +154,7 @@ id rl_layout
 id rvBookedItems
 id rvOfferedItems
 id rvRides
+id rv_listofcustomer
 id setting
 id sideMenu
 id spType
@@ -176,6 +180,7 @@ id tvPrice
 id tvSeats
 id tvSignin
 id tvVechicle
+id tv_CustomerName
 id tv_heading
 id tvbooking
 id tvcustomerName
@@ -183,6 +188,8 @@ id tvdate
 id tvdatentime
 id tvdropOff
 id tvfrom
+id tvheaderemail
+id tvheadername
 id tvpoints
 id tvprice
 id tvto
@@ -202,6 +209,7 @@ layout activity_signup
 layout activity_signup2
 layout activity_splash
 layout app_bar_navigation
+layout booked_rides_customer_list
 layout booked_rides_item
 layout content_navigation
 layout dashboard_viewpager
@@ -222,6 +230,7 @@ layout nav_header_navigation
 layout navigation_layout
 layout offered_rides_item
 layout rewards_viewpager
+layout ride_detail_popup
 layout rides_item
 menu nav_menu
 menu navigation

@@ -6,18 +6,14 @@ import com.example.ridehop_intership_project.Fragment.OfferedRidesFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.RatingBar
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ridehop_intership_project.Activity.MyRidesActivity
-import com.example.ridehop_intership_project.Activity.SearchRidesActivity
-import com.example.ridehop_intership_project.Fragment.BookedRidesFragment
-import com.example.ridehop_intership_project.Model.BookedRides
 import com.example.ridehop_intership_project.R
+import com.example.ridehop_intership_project.Response.OfferedRideResponse
 
 class OfferedRidesAdapter(
-    private val mList: ArrayList<BookedRides>,
+    private val mList: ArrayList<OfferedRideResponse>,
     fragment: OfferedRidesFragment
 ) : RecyclerView.Adapter<OfferedRidesAdapter.ViewHolder>() {
 
@@ -34,12 +30,16 @@ class OfferedRidesAdapter(
 
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.booking_id.setText("Booking Id: "+ mList[position].booking_id)
-        holder.from.setText(mList[position].From)
-        holder.to_dest.setText(mList[position].Dest)
-        holder.namePickup.setText(mList[position].Name+", "+ mList[position].address)
-        holder.datentime.setText(mList[position].Date+" "+ mList[position].Time)
-        holder.tvdate.setText(mList[position].Date)
+        holder.booking_id.setText("Booking Id: "+ mList[position].bookingId)
+        holder.from.setText(mList[position].from)
+        holder.to_dest.setText(mList[position].to)
+        holder.namePickup.setText(mList[position].user.fullName+", "+ mList[position].dropOffPoint)
+        holder.datentime.setText(mList[position].dateTime)
+//        holder.tvdate.setText(mList[position].Date)
+        holder.LLRides.setOnClickListener(View.OnClickListener {
+            context.openRideDetails(mList[position].bookingUsers)
+        })
+
     }
 
 
@@ -56,6 +56,7 @@ class OfferedRidesAdapter(
         var datentime:TextView=itemView.findViewById(R.id.tvdatentime)
         val namePickup:TextView=itemView.findViewById(R.id.tvcustomerName)
         var tvdate:TextView=itemView.findViewById(R.id.tvdate)
+        var LLRides:LinearLayout=itemView.findViewById(R.id.LLRides)
     }
 
 

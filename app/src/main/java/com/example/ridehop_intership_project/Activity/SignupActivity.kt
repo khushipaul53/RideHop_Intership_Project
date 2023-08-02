@@ -83,8 +83,8 @@ class SignupActivity : AppCompatActivity() {
                     var signup = Intent(this@SignupActivity,DashboardActivity::class.java)
 
                     signup.putExtra("data",response.body()!!.user)
-                    signup.putExtra("token",response.body()!!.token)
-                    signup.putExtra("login",true)
+//                    signup.putExtra("token",response.body()!!.token)
+                    signup.putExtra("login",false)
                     signup.putExtra("firstTimeSignup",true)
                     startActivity(signup)
                 }

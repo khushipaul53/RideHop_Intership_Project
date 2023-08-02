@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.viewpager.widget.PagerAdapter
@@ -63,9 +64,20 @@ class RewardsSliderViewPager(val frag: RewardsFragment,val context:Context, val 
         text.setText(imageList.get(position).message)
         var buttonText: AppCompatButton =itemView.findViewById<View>(id.bt_Continue) as AppCompatButton
         buttonText.setText(imageList.get(position).clickItemText)
-buttonText.setOnClickListener(View.OnClickListener {
-    fragment.invitefriend()
-})
+        buttonText.setOnClickListener(View.OnClickListener {
+            if(imageList.get(position).clickItemText.equals("Invite")) {
+                fragment.invitefriend()
+
+            }
+
+
+            else if(imageList.get(position).clickItemText.equals("Redeem"))
+            {
+                Toast.makeText(fragment.requireContext(),"In Progress",Toast.LENGTH_SHORT).show()
+            }
+        })
+
+
 
         // on the below line we are adding this
         // item view to the container.

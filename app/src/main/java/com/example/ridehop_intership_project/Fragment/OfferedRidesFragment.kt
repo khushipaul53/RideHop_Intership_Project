@@ -1,18 +1,28 @@
 package com.example.ridehop_intership_project.Fragment
 
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ridehop_intership_project.Activity.MyRidesActivity
-import com.example.ridehop_intership_project.Adapter.BookedRidesAdapter
 import com.example.ridehop_intership_project.Adapter.OfferedRidesAdapter
-import com.example.ridehop_intership_project.Model.BookedRides
+import com.example.ridehop_intership_project.Model.BookedUser
 import com.example.ridehop_intership_project.R
+import com.example.ridehop_intership_project.Response.OfferedRideResponse
+import com.example.ridehop_intership_project.Retrofit.APIClient
+import com.example.ridehop_intership_project.Retrofit.ApiInterface
+import com.example.ridehop_intership_project.Utils.CustomDialog
 import com.example.ridehop_intership_project.databinding.FragmentOfferedRidesBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,6 +36,10 @@ private const val ARG_PARAM2 = "param2"
  */
 class OfferedRidesFragment : Fragment() {
 lateinit var binding:FragmentOfferedRidesBinding
+    lateinit var sh: SharedPreferences
+    var token=""
+    lateinit var apiInterface: ApiInterface
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,22 +52,60 @@ lateinit var binding:FragmentOfferedRidesBinding
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_offered_rides,container,false)
 
+        apiInterface= APIClient.client!!.create(ApiInterface::class.java).also {
+            apiInterface = it
+        }
+        sh = requireActivity().getSharedPreferences("MySharedPref", AppCompatActivity.MODE_PRIVATE)
+        token = sh.getString("tokken", "")!!
+
+        OfferedRide()
+
         binding!!.rvOfferedItems.layoutManager = LinearLayoutManager(activity as MyRidesActivity)
-        val data = ArrayList<BookedRides>()
-        data.add(BookedRides("2547134","Sachin","Windsor","Toronto","01 Sept","07:00 AM","327 Campbell Avenue,Windsor"))
 
-        data.add(BookedRides("3467234","Keshav","Toronto","Windsor","24 Aug","04:00 PM","327 Campbell Avenue,Windsor"))
-
-        data.add(BookedRides("5654347","Joseph","London","Toronto","10 Sept","01:00 PM","327 Campbell Avenue,Windsor"))
-
-        data.add(BookedRides("2547134","Kriti","Windsor","Brampton","22 Aug","06:00 PM","327 Campbell Avenue,Windsor"))
-
-        data.add(BookedRides("2547134","Aakriti","Windsor","Waterloo/Kitchener","12 Sept","08:00 PM","327 Campbell Avenue,Windsor"))
-
-        val adapter = OfferedRidesAdapter(data,this)
-        binding!!.rvOfferedItems.adapter = adapter
 
         return binding!!.root
+    }
+
+    private fun OfferedRide() {
+        val call: Call<List<OfferedRideResponse?>>? = apiInterface.offeredRide(token = "${token}")
+        call!!.enqueue(object : Callback<List<OfferedRideResponse?>> {
+            override fun onResponse(
+                call: Call<List<OfferedRideResponse?>>?,
+                response: Response<List<OfferedRideResponse?>>
+            ) {
+
+                if(response.isSuccessful)
+                {
+                    var dataList= response.body()!!
+                    Log.d("lcmci",""+dataList)
+                    var data = dataList as ArrayList<OfferedRideResponse>
+
+                    val adapter = OfferedRidesAdapter(data,this@OfferedRidesFragment)
+                    binding!!.rvOfferedItems.adapter = adapter
+
+
+
+                }
+
+
+
+            }
+
+            override fun onFailure(call: Call<List<OfferedRideResponse?>>, t: Throwable) {
+                Toast.makeText(activity as MyRidesActivity,t.message, Toast.LENGTH_SHORT).show()
+
+            } //
+            //
+        })
+
+    }
+
+    fun openRideDetails(bookingUsers: ArrayList<BookedUser>) {
+        val customDialog = CustomDialog(requireContext()!!)
+
+        customDialog.setDialogTitle("Details",bookingUsers.size,bookingUsers)
+        customDialog.show()
+
     }
 
 }

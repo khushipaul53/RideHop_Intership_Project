@@ -1,8 +1,12 @@
 package com.example.ridehop_intership_project.Retrofit
 
+import com.example.ridehop_intership_project.Response.BookeRideResponse
+import com.example.ridehop_intership_project.Response.BookedListResponse
+import com.example.ridehop_intership_project.Response.BookedRides
 import com.example.ridehop_intership_project.Response.CreateRideResponse
 import com.example.ridehop_intership_project.Response.FindRideResponse
 import com.example.ridehop_intership_project.Response.LoginResponse
+import com.example.ridehop_intership_project.Response.OfferedRideResponse
 import com.example.ridehop_intership_project.Response.SignupResponse
 import retrofit2.Call
 import retrofit2.http.Body
@@ -36,4 +40,18 @@ interface ApiInterface {
         @Body param: Map<String?, String?>?):
             Call<CreateRideResponse?>?
 
+    @GET("/ride/offeredRides")
+    fun offeredRide(
+        @Header("x-auth-token")token:String
+    ):Call<List<OfferedRideResponse?>>
+
+    @POST("ride/bookRide")
+    fun bookaRide( @Header("x-auth-token")token:String,
+                   @Body param: Map<String?, String?>?
+    ):Call<BookeRideResponse?>?
+
+    @GET("/ride/bookedRides")
+    fun bookedRides(
+        @Header("x-auth-token")token:String
+    ):Call<BookedRides>?
 }

@@ -11,15 +11,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.ridehop_intership_project.Adapter.RidesAvailableAdapter
-import com.example.ridehop_intership_project.Model.RideAvailable
 import com.example.ridehop_intership_project.R
 import com.example.ridehop_intership_project.Response.FindRideResponse
-import com.example.ridehop_intership_project.Response.LoginResponse
 import com.example.ridehop_intership_project.Retrofit.APIClient
 import com.example.ridehop_intership_project.Retrofit.ApiInterface
 import com.example.ridehop_intership_project.databinding.ActivitySearchRidesBinding
 import com.facebook.CallbackManager
-import com.google.android.material.internal.ContextUtils.getActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,8 +28,11 @@ class SearchRidesActivity : AppCompatActivity() {
 
    var binding:ActivitySearchRidesBinding?=null
     lateinit var apiInterface: ApiInterface
-    lateinit var sh: SharedPreferences
+    lateinit var sh:SharedPreferences
     var token=""
+    var from=""
+    var to=""
+    var seats=0
 lateinit var swipe:SwipeRefreshLayout
     var callbackManager = CallbackManager.Factory.create()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,11 +46,10 @@ lateinit var swipe:SwipeRefreshLayout
         }
         sh = this.getSharedPreferences("MySharedPref", MODE_PRIVATE)
         token = sh.getString("tokken", "")!!
-        var from=decodeUrlParameter(intent.extras!!.getString("from")!!)
-        var to=decodeUrlParameter(intent.extras!!.getString("to")!!)
-        var seats=Integer.parseInt(intent.extras!!.getString("seats"))
+         from=decodeUrlParameter(intent.extras!!.getString("from")!!)
+         to=decodeUrlParameter(intent.extras!!.getString("to")!!)
+         seats=Integer.parseInt(intent.extras!!.getString("selectedSeats"))
 
-        Log.d("eiie",""+from+to)
         FindRideApi(from!!,to!!,seats)
      binding!!.icBack.setOnClickListener(View.OnClickListener {
          onBackPressed()
@@ -106,17 +105,19 @@ lateinit var swipe:SwipeRefreshLayout
         })
     }
 
-    fun open( bookingId:String,
-              Name:String,
-              price:String) {
+    fun open(findRideResponse: FindRideResponse) {
+        var id = findRideResponse._id
+        var from=findRideResponse.from
+        var to=findRideResponse.to
 
-        var b=Bundle()
+        Log.d("eiie",""+seats)
 
         val intent = Intent(this, RiderDetailsActivity::class.java)
-        intent.putExtra("bookingId",bookingId)
-        intent.putExtra("name",Name)
+        intent.putExtra("id",id)
+        intent.putExtra("from",from)
+        intent.putExtra("to",to)
+        intent.putExtra("selectedSeats",seats)
 //        intent.putExtra("rating",Rating)
-        intent.putExtra("price",price)
         startActivity(intent)
 
 

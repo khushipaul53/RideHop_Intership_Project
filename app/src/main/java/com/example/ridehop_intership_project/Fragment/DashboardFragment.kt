@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -40,6 +41,7 @@ class DashboardFragment : Fragment() {
      lateinit var imageList: ArrayList<Int>
     lateinit var binding:FragmentDashboardBinding
     var currentPage=0
+    var seats=""
     lateinit var timer: Timer
     val DELAY_MS: Long = 500 //delay in milliseconds before task is to be executed
     private val sliderHandler: Handler = Handler()
@@ -88,6 +90,20 @@ class DashboardFragment : Fragment() {
             android.R.layout.simple_spinner_dropdown_item
         )
 
+        binding.spType.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                // Retrieve the selected item
+                val selectedItem = parent?.getItemAtPosition(position)
+                if (selectedItem != null) {
+                     seats = selectedItem.toString()
+                    // Do something with the selected item
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Handle the case where nothing is selected
+            }
+        }
         // Set the ArrayAdapter (ad) data on the
         // Spinner which binds data to spinner
 
@@ -106,11 +122,12 @@ class DashboardFragment : Fragment() {
 
         binding!!.btLogin.setOnClickListener(View.OnClickListener {
 
+            Log.d("dmd",""+seats)
 
            var intent= Intent(activity as DashboardActivity, SearchRidesActivity::class.java)
             intent.putExtra("from",binding!!.etFrom.text.toString())
             intent.putExtra("to",binding!!.etTo.text.toString())
-            intent.putExtra("seats",binding!!.spType.selectedItem.toString())
+            intent.putExtra("selectedSeats",seats)
             startActivity(intent)
 
         })

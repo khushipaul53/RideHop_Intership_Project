@@ -21,7 +21,6 @@ tools:openDrawer="start" android:tag="layout/activity_dashboard_0" xmlns:android
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         />
 </androidx.drawerlayout.widget.DrawerLayout>
